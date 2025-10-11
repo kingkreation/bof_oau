@@ -1,0 +1,81 @@
+import React from 'react';
+import Button from '../../components/ui/Button';
+
+const AboutSection = () => {
+  return (
+    <section className="w-full bg-background-main py-[40px] sm:py-[56px] md:py-[80px]">
+      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full max-w-[1198px] mx-auto">
+          <div className="flex flex-col lg:flex-row justify-start items-start gap-[40px] lg:gap-[80px]">
+            {/* Left Content */}
+            <div className="flex flex-col justify-start items-start w-full lg:w-[656px] gap-[24px] sm:gap-[32px] md:gap-[40px]">
+              <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[22px]">
+                <h2 className="text-lg font-bold leading-relaxed text-left text-text-primary font-[Inter]">
+                  Empower
+                </h2>
+                <h3 className="text-[32px] sm:text-[48px] md:text-2xl font-normal leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-text-primary font-[Inter] w-full">
+                  Leading Student Finance Organization in Africa
+                </h3>
+                <p className="text-base font-normal leading-tight text-left text-text-primary font-[Inter] w-full max-w-[590px]">
+                  BOF OAU is Nigeria's first student-led finance club, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape.
+                </p>
+              </div>
+
+              {/* Statistics */}
+              <div className="flex flex-col sm:flex-row justify-start items-center gap-[24px] sm:gap-[40px] w-full">
+                <div className="flex flex-col justify-start items-start gap-[10px] w-full sm:w-auto">
+                  <span className="text-[32px] sm:text-[48px] md:text-2xl font-normal leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-text-primary font-[Inter]">
+                    50%
+                  </span>
+                  <p className="text-base font-normal leading-tight text-left text-text-primary font-[Inter] max-w-[270px]">
+                    Join us for unparalleled finance education and growth.
+                  </p>
+                </div>
+                <div className="flex flex-col justify-start items-start gap-[10px] w-full sm:w-auto">
+                  <span className="text-[32px] sm:text-[48px] md:text-2xl font-normal leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-text-primary font-[Inter]">
+                    50%
+                  </span>
+                  <p className="text-base font-normal leading-tight text-left text-text-primary font-[Inter] max-w-[234px]">
+                    Explore our vibrant community and opportunities.
+                  </p>
+                </div>
+              </div>
+
+              <Button
+                text="Join Us"
+                text_font_size="16"
+                text_font_family="Times New Roman"
+                text_font_weight="400"
+                text_line_height="19px"
+                text_text_align="center"
+                text_color="#000000"
+                fill_background_color="#00713acc"
+                border_border_radius="8px"
+                border_border="none"
+                layout_width="auto"
+                position="relative"
+                margin="0"
+                variant="primary"
+                size="medium"
+                padding="8px 14px"
+                className="w-auto mt-[16px] sm:mt-[24px]"
+                onClick={() => {}}
+              />
+            </div>
+
+            {/* Right Image */}
+            <div className="flex justify-center items-center w-full lg:w-[528px] lg:self-center">
+              <img 
+                src="/images/img_rectangle_2.png" 
+                alt="BOF OAU Activities" 
+                className="w-full max-w-[528px] h-[300px] sm:h-[400px] md:h-[572px] object-cover rounded-sm"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;

@@ -1,0 +1,75 @@
+{
+  "name": "joshua_s_application",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "rocketCritical": {
+    "dependencies": [
+      "react",
+      "react-dom",
+      "prop-types",
+      "react-router-dom",
+      "@dhiwise/component-tagger",
+      "@tailwindcss/typography",
+      "recharts"
+    ],
+    "devDependencies": [
+      "@vitejs/plugin-react",
+      "vite",
+      "typescript",
+      "@types/react",
+      "@types/react-dom",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "typescript-eslint",
+      "tailwindcss",
+      "autoprefixer",
+      "postcss",
+      "eslint",
+      "prettier"
+    ],
+    "scripts": [
+      "start",
+      "build",
+      "lint",
+      "lint:fix",
+      "format",
+      "preview",
+      "serve",
+      "type-check"
+    ],
+    "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for TypeScript React app functionality"
+  },
+  "scripts": {
+    "start": "vite",
+    "build": "tsc --noCheck && vite build",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\"",
+    "preview": "vite preview",
+    "serve": "vite preview",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "6.0.2",
+    "prop-types": "^15.8.1",
+    "@dhiwise/component-tagger": "^1.0.10",
+    "@tailwindcss/typography": "^0.5.16",
+    "recharts": "^2.15.2",
+    "tailwind-merge": "^3.3.1",
+    "class-variance-authority": "^0.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitejs/plugin-react": "4.3.4",
+    "autoprefixer": "10.4.2",
+    "globals": "^15.15.0",
+    "postcss": "8.4.8",
+    "prettier": "^3.5.3",
+    "tailwindcss": "3.4.6",
+    "typescript": "~5.7.2",
+    "vite": "5.0.0"
+  }
+}
