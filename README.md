@@ -96,7 +96,7 @@ npm run build
 
 ## 🙏 Acknowledgments
 
-
+- Built by Joshua Kolawole 
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
