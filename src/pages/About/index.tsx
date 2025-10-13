@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import HeroSection from './HeroSection';
+import Header from '../../components/common/Header';
 import FoundingStorySection from './FoundingStorySection';
 import EventsProgramsSection from './EventsProgramsSection';
 import Footer from '../../components/common/Footer';
@@ -19,7 +19,7 @@ const About = () => {
       </Helmet>
 
       <main className="w-full bg-background-main">
-        <HeroSection />
+        <Header />
         <FoundingStorySection />
         <EventsProgramsSection />
         <Footer />
