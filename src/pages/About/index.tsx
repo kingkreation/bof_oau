@@ -24,6 +24,7 @@ const About = () => {
         <Header />
         <FoundingStorySection />
         <EventsProgramsSection />
+        <div style={{ marginTop: "80px" }}></div>
         <AlumniTestimony />
         <ContactSection />
         <FooterSection />
