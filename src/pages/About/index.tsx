@@ -3,7 +3,9 @@ import { Helmet } from 'react-helmet';
 import Header from '../../components/common/Header';
 import FoundingStorySection from './FoundingStorySection';
 import EventsProgramsSection from './EventsProgramsSection';
-import Footer from '../../components/common/Footer';
+import AlumniTestimony from '../../components/common/AlumniTestimony';
+import FooterSection from '../Home/FooterSection';
+import ContactSection from '../Home/ContactSection';
 
 const About = () => {
   return (
@@ -22,7 +24,9 @@ const About = () => {
         <Header />
         <FoundingStorySection />
         <EventsProgramsSection />
-        <Footer />
+        <AlumniTestimony />
+        <ContactSection />
+        <FooterSection />
       </main>
     </>
   );
