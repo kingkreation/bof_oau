@@ -17,19 +17,19 @@ const FooterSection = () => {
             {/* Navigation Links */}
             <div className="flex flex-col sm:flex-row justify-center items-center gap-[16px] sm:gap-[20px] md:gap-[30px]">
               <a 
-                href="#about" 
+                href="/about" 
                 className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 About Us
               </a>
               <a 
-                href="#mission" 
+                href="/mission" 
                 className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 Mission
               </a>
               <a 
-                href="#structure" 
+                href="/structure" 
                 className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 Our Structure

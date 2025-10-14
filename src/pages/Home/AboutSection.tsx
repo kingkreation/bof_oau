@@ -1,7 +1,33 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Button from '../../components/ui/Button';
 
 const AboutSection = () => {
+  const navigate = useNavigate();
+
+  const JoinButton = () => (
+    <Button
+      text="Join Us"
+      text_font_size="16"
+      text_font_family="Times New Roman"
+      text_font_weight="400"
+      text_line_height="19px"
+      text_text_align="center"
+      text_color="#000000"
+      fill_background_color="#00713acc"
+      border_border_radius="8px"
+      border_border="none"
+      layout_width="auto"
+      position="relative"
+      margin="0"
+      variant="primary"
+      size="medium"
+      padding="8px 14px"
+      className="w-auto mt-[16px] sm:mt-[24px]"
+      onClick={() => navigate('/join-us')}
+    />
+  );
+
   return (
     <section className="w-full bg-background-main py-[40px] sm:py-[56px] md:py-[80px]">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,26 +67,7 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <Button
-                text="Join Us"
-                text_font_size="16"
-                text_font_family="Times New Roman"
-                text_font_weight="400"
-                text_line_height="19px"
-                text_text_align="center"
-                text_color="#000000"
-                fill_background_color="#00713acc"
-                border_border_radius="8px"
-                border_border="none"
-                layout_width="auto"
-                position="relative"
-                margin="0"
-                variant="primary"
-                size="medium"
-                padding="8px 14px"
-                className="w-auto mt-[16px] sm:mt-[24px]"
-                onClick={() => {}}
-              />
+              <JoinButton />
             </div>
 
             {/* Right Image */}

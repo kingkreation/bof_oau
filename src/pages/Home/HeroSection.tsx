@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Header from '../../components/common/Header';
 import Button from '../../components/ui/Button';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="w-full bg-background-main">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,7 +44,7 @@ const HeroSection = () => {
                 size="medium"
                 padding="8px"
                 className="w-full sm:w-auto min-w-[100px]"
-                onClick={() => {}}
+                onClick={() => navigate('/join-us')}
               />
               <Button
                 text="Learn More"
@@ -62,7 +64,7 @@ const HeroSection = () => {
                 size="medium"
                 padding="8px"
                 className="w-full sm:w-auto min-w-[100px]"
-                onClick={() => {}}
+                onClick={() => navigate('/learn-more')}
               />
             </div>
           </div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
         import { Helmet } from 'react-helmet';
         import Header from '../../components/common/Header';
-        import Footer from '../../components/common/Footer';
+        import FooterSection from '../Home/FooterSection';
 
         const JoinUs = () => {
           const [formData, setFormData] = useState({
@@ -324,7 +324,7 @@ import React, { useState } from 'react';
                   </div>
                 </section>
 
-                <Footer />
+                <FooterSection />
               </div>
             </>
           );

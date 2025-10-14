@@ -1,7 +1,7 @@
 import React from 'react';
         import { Helmet } from 'react-helmet';
         import Header from '../../components/common/Header';
-        import Footer from '../../components/common/Footer';
+        import FooterSection from '../Home/FooterSection';
 
         const Mission = () => {
           return (
@@ -210,7 +210,7 @@ import React from 'react';
                   </div>
                 </section>
 
-                <Footer />
+                <FooterSection />
               </div>
             </>
           );
