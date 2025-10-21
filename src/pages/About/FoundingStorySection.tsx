@@ -22,8 +22,18 @@ const FoundingStorySection = () => {
               className="absolute top-0 left-[38px] w-full sm:w-[94%] h-[400px] sm:h-[600px] lg:h-[754px] object-cover"
             />
             
-            {/* Content Card */}
-            <div className="absolute bottom-[100px] sm:bottom-[150px] lg:bottom-[292px] left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[80%] lg:w-[72%] bg-background-main border border-text-primary rounded-sm p-4 sm:p-6 lg:p-[22px]">
+            {/* Content Card (positioned bottom-right as requested) */}
+            <div
+              className="absolute bg-background-main border border-text-primary rounded-sm p-4 sm:p-6 lg:p-[22px] overflow-auto"
+              style={{
+                top: 300,
+                left: 300,
+                width: 921,
+                height: 857,
+                boxSizing: 'border-box',
+                borderWidth: 1,
+              }}
+            >
               <div className="flex flex-col gap-[14px] items-center">
                 {/* Section Title */}
                 <h2 className="text-[24px] sm:text-[36px] lg:text-[48px] font-normal leading-super-loose text-center text-text-primary">

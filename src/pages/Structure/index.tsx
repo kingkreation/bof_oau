@@ -19,30 +19,58 @@ const Structure = () => {
         <Header />
 
         {/* Hero */}
-        <section className="relative h-96 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581092580497-e0d23cbdf31f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')" }}>
-          <div className="absolute inset-0 bg-black/40"></div>
-          <div className="container mx-auto relative z-10 h-full flex flex-col items-center justify-center text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg">Built for Excellence</h1>
-          </div>
+        <section className="w-full flex justify-center">
+          <div
+            className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/rec.png')" }}
+          >
 
-          {/* Stats */}
-          <div className="absolute top-4 left-0 right-0 flex justify-center gap-4 flex-wrap px-4 z-20">
-            <div className="bg-white text-gray-800 px-4 py-3 rounded shadow text-center">
-              <div className="text-2xl font-bold">03</div>
-              <div className="text-sm">Core Divisions</div>
+            {/* Large heading: bottom-left overlay (responsive sizing) */}
+            <h1
+              className="absolute text-white left-6 md:left-10 lg:left-12"
+              style={{
+                bottom: 16,
+                width: 600,
+                fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
+                fontWeight: 800,
+                fontSize: 'clamp(28px, 6vw, 96px)',
+                lineHeight: '1',
+                margin: 0,
+              }}
+            >
+              Built for Excellence
+            </h1>
+
+            {/* Stats: top-left group - slightly escaping image */}
+            <div className="absolute" style={{ left: 40, top: -28 }}>
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div className="text-lg font-bold">03</div>
+                <div className="text-xs font-bold">Core Divisions</div>
+              </div>
             </div>
-            <div className="bg-white text-gray-800 px-4 py-3 rounded shadow text-center">
-              <div className="text-2xl font-bold">15+</div>
-              <div className="text-sm">Specialized Teams</div>
+
+            <div className="absolute" style={{ left: 290, top: -28 }}>
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div className="text-lg font-bold">15+</div>
+                <div className="text-xs font-bold">Specialized Teams</div>
+              </div>
             </div>
-            <div className="bg-white text-gray-800 px-4 py-3 rounded shadow text-center">
-              <div className="text-2xl font-bold">03</div>
-              <div className="text-sm">Live Subsidiaries</div>
+
+            {/* Stats: bottom-right group - slightly outside image */}
+            <div className="absolute" style={{ right: 320, bottom: -28 }}>
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div className="text-lg font-bold">03</div>
+                <div className="text-xs font-bold">Live Subsidiaries</div>
+              </div>
             </div>
-            <div className="bg-white text-gray-800 px-4 py-3 rounded shadow text-center">
-              <div className="text-2xl font-bold">500+</div>
-              <div className="text-sm">Active Members</div>
+
+            <div className="absolute" style={{ right: 100, bottom: -28 }}>
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
+                <div className="text-lg font-bold">500+</div>
+                <div className="text-xs font-bold">Active Members</div>
+              </div>
             </div>
+
           </div>
         </section>
 
@@ -163,9 +191,9 @@ const Structure = () => {
             <p className="max-w-3xl mx-auto text-gray-700 mt-3">Strategic alliance with London's premier student finance organization, enabling cross-continental competitions, knowledge sharing, and networking opportunities across Africa and Europe.</p>
 
             <div className="flex items-center justify-center gap-8 mt-8">
-              <img src="https://via.placeholder.com/150x100?text=BOF+OAU+Logo" alt="BOF OAU Logo" className="h-24" />
+              <img src="/images/bof.png" alt="BOF OAU Logo" className="h-24" />
               <div className="h-1 w-12 bg-gray-800"></div>
-              <img src="https://via.placeholder.com/150x100?text=ICIS+Logo" alt="ICIS Logo" className="h-24" />
+              <img src="/images/icis.png" alt="ICIS Logo" className="h-24" />
             </div>
           </div>
         </section>
