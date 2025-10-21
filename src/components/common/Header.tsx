@@ -24,8 +24,8 @@ const Header = ({ className = '' }: HeaderProps) => {
         <div className="flex justify-between items-center w-full py-4 md:py-6">
           {/* Logo Section */}
           <Link to="/" className="flex justify-start items-center" onClick={closeMenu}>
-            <div className="flex flex-col justify-start items-center">
-              <div className="relative flex flex-col justify-start items-center w-[60px] sm:w-[70px] md:w-[80px]">
+            <div className="flex items-center gap-4">
+              <div className="relative flex-shrink-0 w-[60px] sm:w-[70px] md:w-[80px]">
                 <img 
                   src="/images/img_d64c46b0a850558.png" 
                   alt="BOF OAU Logo" 
@@ -36,6 +36,12 @@ const Header = ({ className = '' }: HeaderProps) => {
                   alt="BOF OAU Logo Overlay" 
                   className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] -mt-[60px] sm:-mt-[70px] md:-mt-[80px]"
                 />
+              </div>
+
+              {/* Organization name - two lines, bold, black, left aligned */}
+              <div className="text-left leading-tight">
+                <div className="text-sm sm:text-base md:text-lg font-bold text-black">The Students' Professional</div>
+                <div className="text-sm sm:text-base md:text-lg font-bold text-black">Bureau Of Finance, OAU</div>
               </div>
             </div>
           </Link>
