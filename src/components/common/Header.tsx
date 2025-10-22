@@ -2,43 +2,64 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../ui/Button';
 
+/**
+ * Interface for Header component props
+ * @property {string} className - Optional CSS class to apply to the header
+ */
 interface HeaderProps {
   className?: string;
 }
 
-const Header = ({ className = '' }: HeaderProps) => {
+/**
+ * Header component that appears on all pages
+ * Provides navigation and branding for the application
+ * Includes responsive design for mobile and desktop views
+ * 
+ * @param {HeaderProps} props - Component properties
+ * @returns Responsive header with navigation and branding
+ */
+const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+  // State to track mobile menu open/closed status
   const [menuOpen, setMenuOpen] = useState(false);
+  // Get current location to highlight active navigation item
   const location = useLocation();
 
+  /**
+   * Toggle mobile menu open/closed
+   */
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  /**
+   * Close the mobile menu
+   */
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
   return (
-    <header className={`w-full bg-header-background ${className}`}>
+    <header className={`w-full bg-header-background sticky top-0 z-30 ${className}`}>
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center w-full py-4 md:py-6">
-          {/* Logo Section */}
+          {/* Logo and Organization Name Section */}
           <Link to="/" className="flex justify-start items-center" onClick={closeMenu}>
             <div className="flex items-center gap-4">
+              {/* Logo with overlay effect */}
               <div className="relative flex-shrink-0 w-[60px] sm:w-[70px] md:w-[80px]">
                 <img 
                   src="/images/img_d64c46b0a850558.png" 
                   alt="BOF OAU Logo" 
-                  className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]"
+                  className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] object-contain"
                 />
                 <img 
                   src="/images/img_d64c46b0a850558.png" 
                   alt="BOF OAU Logo Overlay" 
-                  className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] -mt-[60px] sm:-mt-[70px] md:-mt-[80px]"
+                  className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] -mt-[60px] sm:-mt-[70px] md:-mt-[80px] object-contain opacity-80"
                 />
               </div>
 
-              {/* Organization name - two lines, bold, black, left aligned */}
+              {/* Organization name - responsive text size */}
               <div className="text-left leading-tight">
                 <div className="text-sm sm:text-base md:text-lg font-bold text-black">The Students' Professional</div>
                 <div className="text-sm sm:text-base md:text-lg font-bold text-black">Bureau of Finance, OAU</div>
@@ -46,7 +67,7 @@ const Header = ({ className = '' }: HeaderProps) => {
             </div>
           </Link>
 
-          {/* Hamburger Menu Icon (Mobile only) */}
+          {/* Hamburger Menu Button - Mobile Only */}
           <button 
             className="block lg:hidden p-2 z-50 relative" 
             aria-label="Toggle menu"
@@ -63,13 +84,14 @@ const Header = ({ className = '' }: HeaderProps) => {
             )}
           </button>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation - Hidden on Mobile */}
           <div className="hidden lg:flex flex-row justify-between items-center gap-8">
             <nav className="flex flex-row justify-between items-center gap-6">
+              {/* Navigation Links with Active State Highlighting */}
               <Link 
                 to="/about" 
                 className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                  location.pathname === '/about' ? 'text-primary-background' : 'text-text-primary'
+                  location.pathname === '/about' ? 'text-primary-background font-medium' : 'text-text-primary'
                 }`}
               >
                 About us
@@ -77,7 +99,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               <Link 
                 to="/mission" 
                 className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                  location.pathname === '/mission' ? 'text-primary-background' : 'text-text-primary'
+                  location.pathname === '/mission' ? 'text-primary-background font-medium' : 'text-text-primary'
                 }`}
               >
                 Our Mission
@@ -85,13 +107,14 @@ const Header = ({ className = '' }: HeaderProps) => {
               <Link 
                 to="/structure" 
                 className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                  location.pathname === '/structure' ? 'text-primary-background' : 'text-text-primary'
+                  location.pathname === '/structure' ? 'text-primary-background font-medium' : 'text-text-primary'
                 }`}
               >
                 Our Structure
               </Link>
             </nav>
 
+            {/* Join Us Button */}
             <Button
               text="Join Us"
               text_font_size="16"
@@ -114,13 +137,20 @@ const Header = ({ className = '' }: HeaderProps) => {
             />
           </div>
 
-          {/* Mobile Navigation Overlay */}
-          <div className={`${menuOpen ? 'block' : 'hidden'} lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40`} onClick={closeMenu}></div>
+          {/* Mobile Menu Background Overlay */}
+          <div 
+            className={`${menuOpen ? 'block' : 'hidden'} lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40`} 
+            onClick={closeMenu}
+            aria-hidden="true"
+          ></div>
           
-          {/* Mobile Navigation Menu */}
-          <div className={`${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out`}>
+          {/* Mobile Navigation Slide-in Menu */}
+          <div 
+            className={`${menuOpen ? 'translate-x-0' : 'translate-x-full'} lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-lg z-50 transform transition-transform duration-300 ease-in-out overflow-y-auto`}
+            aria-label="Mobile navigation"
+          >
             <div className="flex flex-col h-full">
-              {/* Mobile Menu Header */}
+              {/* Mobile Menu Header with Close Button */}
               <div className="flex justify-between items-center p-4 border-b">
                 <h2 className="text-lg font-semibold text-text-primary">Menu</h2>
                 <button 
@@ -134,7 +164,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                 </button>
               </div>
 
-              {/* Mobile Menu Content */}
+              {/* Mobile Menu Navigation Links */}
               <nav className="flex flex-col flex-1 p-4 gap-6">
                 <Link 
                   to="/about" 
@@ -165,7 +195,7 @@ const Header = ({ className = '' }: HeaderProps) => {
                 </Link>
               </nav>
 
-              {/* Mobile CTA Button */}
+              {/* Mobile Call-to-Action Button */}
               <div className="p-4 border-t">
                 <Button
                   text="Join Us"
