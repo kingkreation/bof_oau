@@ -35,14 +35,17 @@ const HeroSection: React.FC = () => {
           {/* Hero Content */}
           <div className="flex flex-col justify-start items-center w-full max-w-[892px] gap-[24px] sm:gap-[32px] md:gap-[48px]">
             {/* Main Heading - Fixed line height to prevent text overlap */}
-            <h1 className="text-[32px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-normal leading-[42px] sm:leading-[64px] md:leading-[76px] lg:leading-[60px] text-center text-text-primary font-[Inter] w-full">
-              Empowering Future Financial Leaders at OAU
-            </h1>
+            <h1 className="w-full max-w-[892px] mx-auto [font-family:'Inter',Helvetica] font-normal text-black text-[64px] text-center tracking-[0] leading-[normal] mb-8">
+          Empowering Future Financial Leaders at OAU
+        </h1>
 
             {/* Description - Improved readability with better line height */}
-            <p className="text-base sm:text-lg md:text-xl font-normal leading-relaxed text-center text-text-primary font-[Inter] w-full max-w-[836px] mt-[8px] px-[28px] sm:px-[40px] md:px-[56px]">
-              Join BOF OAU, Nigeria's premier student finance club, where passion meets opportunity. Together, we cultivate the next generation of financial professionals through innovative training and real-world experiences.
-            </p>
+            <p className="w-full max-w-[713px] mx-auto [font-family:'Inter',Helvetica] font-normal text-black text-base text-center tracking-[0] leading-[normal] mb-12">
+          Join BOF OAU, Nigeria&#39;s premier student finance club, where
+          passion meets opportunity. Together, we cultivate the next generation
+          of financial professionals through innovative training and real-world
+          experiences.
+        </p>
 
             {/* CTA Buttons - Improved mobile responsiveness */}
             <div className="flex flex-col sm:flex-row justify-center items-center gap-[16px] sm:gap-[24px] w-full sm:w-auto mt-[22px] sm:mt-[32px] md:mt-[54px]">
