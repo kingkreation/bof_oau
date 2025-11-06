@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
         </h1>
 
             {/* Description - Improved readability with better line height */}
-            <p className="w-full max-w-[713px] mx-auto [font-family:'Inter',Helvetica] font-normal text-black text-base text-center tracking-[0] leading-[normal] mb-10">
+            <p className="w-full max-w-[713px] mx-auto [font-family:'Inter',Helvetica] font-normal text-black text-base text-center tracking-[0] leading-[normal] mb-8">
           Join BOF OAU, Nigeria&#39;s premier student finance club, where
           passion meets opportunity. Together, we cultivate the next generation
           of financial professionals through innovative training and real-world
