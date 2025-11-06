@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
             {/* Left Content - Text and Statistics */}
             <div className="flex flex-col justify-start items-start w-full lg:w-[656px] gap-[24px] sm:gap-[32px] md:gap-[40px]">
               {/* Heading and Introduction */}
-              <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[22px]">
+              <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[18px]">
                 <h2 className="text-lg font-bold leading-relaxed text-left text-text-primary font-[Inter]">
                   Empower
                 </h2>
