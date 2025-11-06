@@ -48,47 +48,8 @@ const HeroSection: React.FC = () => {
         </p>
 
             {/* CTA Buttons - Improved mobile responsiveness */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-[16px] sm:gap-[24px] w-full sm:w-auto mt-[22px] sm:mt-[32px] md:mt-[54px]">
-              <Button
-                text="Join Us"
-                text_font_size="16"
-                text_font_family="Inter"
-                text_font_weight="500"
-                text_line_height="20px"
-                text_text_align="center"
-                text_color="#000000"
-                fill_background_color="#00713acc"
-                border_border="none"
-                border_border_radius="8px"
-                layout_width="auto"
-                position="relative"
-                margin="0"
-                variant="primary"
-                size="medium"
-                padding="12px 24px"
-                className="w-full sm:w-auto min-w-[140px] hover:bg-primary-background transition-colors duration-200"
-                onClick={handleJoinClick}
-              />
-              <Button
-                text="Learn More"
-                text_font_size="16"
-                text_font_family="Inter"
-                text_font_weight="500"
-                text_line_height="20px"
-                text_text_align="center"
-                text_color="#00713a"
-                fill_background_color="transparent"
-                border_border="2px solid #00713a"
-                border_border_radius="8px"
-                layout_width="auto"
-                position="relative"
-                margin="0"
-                variant="outline"
-                size="medium"
-                padding="12px 24px"
-                className="w-full sm:w-auto min-w-[140px] hover:bg-primary-light hover:bg-opacity-10 transition-colors duration-200"
-                onClick={handleLearnMoreClick}
-              />
+            <div className="mt-6 inline-block">
+              <Button text="Become an Analyst" size="large" variant="outline" />
             </div>
           </div>
 
