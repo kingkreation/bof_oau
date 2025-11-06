@@ -13,25 +13,13 @@ const EvolutionSection = () => {
                 The Evolution of BOF OAU Since 2011
               </h2>
               <Button
-                text="Learn More"
-                text_font_size="16"
-                text_font_family="Inter"
-                text_font_weight="500"
-                text_line_height="20px"
-                text_text_align="center"
-                text_color="#000000"
-                fill_background_color="transparent"
-                border_border="2px solid #00713acc"
-                border_border_radius="8px"
-                padding="8px"
-                className="w-auto mt-[16px]"
-                layout_width="auto"
-                position="static"
-                margin="0"
-                variant="outlined"
-                size="medium"
-                onClick={() => {}}
-              />
+            variant="outline"
+            className="w-fit h-auto px-4 py-2.5 rounded-lg border-2 border-[#00713acc] hover:bg-[#00713a0d]"
+          >
+            <span className="[font-family:'Inter',Helvetica] font-medium text-black text-base tracking-[0] leading-[normal]">
+              Learn More
+            </span>
+          </Button>
             </div>
 
             {/* Right Timeline */}
