@@ -53,19 +53,13 @@ const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Hero Image Stack - Fixed shadow and improved responsiveness */}
-          <div className="relative w-full max-w-[1228px] h-[300px] sm:h-[400px] md:h-[546px] mt-[24px] sm:mt-[32px] md:mt-[48px] mb-8 md:mb-12">
-            {/* Background Shadow - Improved shadow effect */}
-            <div className="absolute inset-0 top-[60px] sm:top-[80px] md:top-[111px] w-full h-[240px] sm:h-[320px] md:h-[434px] bg-primary-light rounded-lg shadow-lg"></div>
-            
-            {/* Main Image - Added loading optimization and improved alt text */}
-            <img 
-              src="/images/img_rectangle_7.png" 
-              alt="BOF OAU Team Members at a Financial Conference" 
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[calc(100%-32px)] sm:w-[calc(100%-40px)] md:w-[calc(100%-46px)] h-[260px] sm:h-[360px] md:h-[472px] object-cover rounded-lg"
-              loading="eager"
-            />
-          </div>
+          <div className="w-full max-w-[1185px] mx-auto">
+          <img
+            className="w-full h-auto rounded-lg object-cover"
+            alt="Faculty advisors and students at OAU"
+            src="/images/img_rectangle_7.png" 
+          />
+        </div>
         </div>
       </div>
     </section>
