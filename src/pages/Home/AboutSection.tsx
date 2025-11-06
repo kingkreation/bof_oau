@@ -37,10 +37,10 @@ const AboutSection: React.FC = () => {
               <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[22px]">
                 <h2 className="text-lg font-bold leading-relaxed text-left text-text-primary font-[Inter]">
                   Empower
-                </h2>
-                <h3 className="text-[32px] sm:text-[48px] md:text-[56px] font-normal leading-[38px] sm:leading-[58px] lg:leading-[50px] md:leading-extra-loose text-left text-text-primary font-[Inter] w-full">
-                  Leading Student Finance Organization in Africa
                 </h3>
+                <h3 className="[font-family:'Inter',Helvetica] font-normal text-black text-[64px] tracking-[-6.40px] leading-normal">
+              Leading Student Finance Organization in Africa
+            </h3>
                 <p className="text-base sm:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full max-w-[590px]">
                   BOF OAU is Nigeria's first student-led finance club, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape.
                 </p>
