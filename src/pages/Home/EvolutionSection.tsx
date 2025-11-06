@@ -24,7 +24,7 @@ const EvolutionSection = () => {
 
             {/* Right Timeline */}
             <div className="flex flex-col justify-start items-end w-full lg:w-[506px] lg:self-center">
-              <div className="flex flex-col justify-start items-start gap-[40px] sm:gap-[60px] w-full max-w-[458px] ml-[38px]">
+              <div className="flex flex-col justify-start items-start gap-[20px] sm:gap-[30px] w-full max-w-[458px] ml-[38px]">
                 {/* Timeline Item 1 */}
                 <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[32px]">
                   <div className="flex justify-start items-start gap-[20px] sm:gap-[30px] w-full">
