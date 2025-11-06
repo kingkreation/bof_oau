@@ -38,7 +38,7 @@ const AboutSection: React.FC = () => {
                 <h2 className="text-lg font-bold leading-relaxed text-left text-text-primary font-[Inter]">
                   Empower
                 </h2>
-                <h3 className="[font-family:'Inter',Helvetica] font-normal text-black text-[64px] tracking-[-6.40px] leading-normal">
+                <h3 className="[font-family:'Inter',Helvetica] font-normal text-black text-[64px] leading-normal">
               Leading Student Finance Organization in Africa
             </h3>
                 <p className="text-base sm:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full max-w-[590px]">
