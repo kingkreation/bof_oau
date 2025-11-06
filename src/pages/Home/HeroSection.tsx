@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
           {/* Hero Content */}
           <div className="flex flex-col justify-start items-center w-full max-w-[892px]">
             {/* Main Heading - Fixed line height to prevent text overlap */}
-            <h1 className="w-full max-w-[892px] mx-auto [font-family:'Inter',Helvetica] font-normal sm:text-[44px] text-black text-[64px] text-center tracking-[0] leading-[normal] mb-8">
+            <h1 className="w-full max-w-[892px] mx-auto [font-family:'Inter',Helvetica] font-normal  sm:leading-[58px] text-black text-[64px] text-center tracking-[0] leading-[normal] mb-8">
           Empowering Future Financial Leaders at OAU
         </h1>
 
