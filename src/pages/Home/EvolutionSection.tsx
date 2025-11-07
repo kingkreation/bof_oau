@@ -16,7 +16,7 @@ const EvolutionSection = () => {
             variant="outline"
             className="w-fit h-auto px-4 py-2.5 rounded-lg border-2 border-[#00713acc] hover:bg-[#00713a0d]"
           >
-            <span className="[font-family:'Inter',Helvetica] font-medium text-black text-base tracking-[0] leading-[normal]">
+            <span className="font-medium text-black text-base tracking-[0] leading-[normal]">
               Learn More
             </span>
           </Button>

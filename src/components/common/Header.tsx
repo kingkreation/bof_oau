@@ -72,8 +72,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 </div>
 
                 <div className="text-left leading-tight">
-                  <div className="text-sm sm:text-base font-family:'Inter',Helvetica md:text-lg font-bold text-black">The Students' Professional</div>
-                  <div className="text-sm sm:text-base font-family:'Inter',Helvetica md:text-lg font-bold text-black">Bureau of Finance, OAU</div>
+                  <div className="text-sm sm:text-base md:text-lg font-bold text-black">The Students' Professional</div>
+                  <div className="text-sm sm:text-base md:text-lg font-bold text-black">Bureau of Finance, OAU</div>
                 </div>
               </div>
             </Link>

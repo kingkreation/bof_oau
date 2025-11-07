@@ -30,7 +30,6 @@ const Structure = () => {
               className="absolute text-white left-6 md:left-10 lg:left-12 w-[200px] md:w-[400px] lg:w-[600px]"
               style={{
                 bottom: 16,
-                fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
                 fontWeight: 800,
                 fontSize: 'clamp(28px, 6vw, 96px)',
                 lineHeight: '1',
