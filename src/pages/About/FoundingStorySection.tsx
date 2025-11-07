@@ -8,28 +8,24 @@ const FoundingStorySection = () => {
           {/* Background Stack Container */}
           <div className="relative w-full h-[600px] sm:h-[800px] lg:h-[1180px]">
             {/* Background Overlay */}
-            <div 
-              className="absolute bottom-0 left-[30px] w-full sm:w-[96%] h-[200px] sm:h-[300px] lg:h-[434px] rounded-sm shadow-[0px_4px_100px_#888888ff]"
+            <div
+              className="absolute bottom-0 left-[10px] sm:left-[30px] w-[95%] sm:w-[96%] h-[200px] sm:h-[300px] lg:h-[434px] rounded-sm shadow-[0px_4px_100px_#888888ff]"
               style={{
                 background: 'linear-gradient(180deg, #ffffff4c 0%, #89dbb34c 100%)'
               }}
             />
             
             {/* Main Image */}
-            <img 
-              src="/images/img_rectangle_20.png" 
-              alt="BOF OAU Team" 
-              className="absolute top-0 left-[38px] w-full sm:w-[94%] h-[400px] sm:h-[600px] lg:h-[754px] object-cover"
+            <img
+              src="/images/img_rectangle_20.png"
+              alt="BOF OAU Team"
+              className="absolute top-0 left-[15px] sm:left-[38px] w-[95%] sm:w-[94%] h-[400px] sm:h-[600px] lg:h-[754px] object-cover"
             />
             
             {/* Content Card (positioned bottom-right as requested) */}
             <div
-              className="absolute bg-background-main border border-text-primary rounded-sm p-4 sm:p-6 lg:p-[22px] overflow-auto"
+              className="absolute bg-background-main border border-text-primary rounded-sm p-4 sm:p-6 lg:p-[22px] overflow-auto top-[200px] sm:top-[300px] left-[10px] sm:left-[50px] lg:left-[300px] w-[90%] sm:w-[80%] lg:w-[921px] h-[400px] sm:h-[600px] lg:h-[857px]"
               style={{
-                top: 300,
-                left: 300,
-                width: 921,
-                height: 857,
                 boxSizing: 'border-box',
                 borderWidth: 1,
               }}

@@ -27,10 +27,9 @@ const Structure = () => {
 
             {/* Large heading: bottom-left overlay (responsive sizing) */}
             <h1
-              className="absolute text-white left-6 md:left-10 lg:left-12"
+              className="absolute text-white left-6 md:left-10 lg:left-12 w-[200px] md:w-[400px] lg:w-[600px]"
               style={{
                 bottom: 16,
-                width: 600,
                 fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial',
                 fontWeight: 800,
                 fontSize: 'clamp(28px, 6vw, 96px)',
@@ -42,32 +41,32 @@ const Structure = () => {
             </h1>
 
             {/* Stats: top-left group - slightly escaping image */}
-            <div className="absolute" style={{ left: 40, top: -28 }}>
-              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
-                <div className="text-lg font-bold">03</div>
-                <div className="text-xs font-bold">Core Divisions</div>
+            <div className="absolute left-[10px] md:left-[40px] top-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[120px] md:w-[181px] h-[64px] md:h-[96px] p-3 border border-gray-200 border-opacity-10">
+                <div className="text-sm md:text-lg font-bold">03</div>
+                <div className="text-xs md:text-sm font-bold">Core Divisions</div>
               </div>
             </div>
 
-            <div className="absolute" style={{ left: 290, top: -28 }}>
-              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
-                <div className="text-lg font-bold">15+</div>
-                <div className="text-xs font-bold">Specialized Teams</div>
+            <div className="absolute left-[140px] md:left-[290px] top-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[120px] md:w-[181px] h-[64px] md:h-[96px] p-3 border border-gray-200 border-opacity-10">
+                <div className="text-sm md:text-lg font-bold">15+</div>
+                <div className="text-xs md:text-sm font-bold">Specialized Teams</div>
               </div>
             </div>
 
             {/* Stats: bottom-right group - slightly outside image */}
-            <div className="absolute" style={{ right: 320, bottom: -28 }}>
-              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
-                <div className="text-lg font-bold">03</div>
-                <div className="text-xs font-bold">Live Subsidiaries</div>
+            <div className="absolute right-[140px] md:right-[320px] bottom-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[120px] md:w-[181px] h-[64px] md:h-[96px] p-3 border border-gray-200 border-opacity-10">
+                <div className="text-sm md:text-lg font-bold">03</div>
+                <div className="text-xs md:text-sm font-bold">Live Subsidiaries</div>
               </div>
             </div>
 
-            <div className="absolute" style={{ right: 100, bottom: -28 }}>
-              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center" style={{ width: 181, height: 96, padding: '12px', border: '1px solid rgba(0,0,0,0.08)' }}>
-                <div className="text-lg font-bold">500+</div>
-                <div className="text-xs font-bold">Active Members</div>
+            <div className="absolute right-[10px] md:right-[100px] bottom-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[120px] md:w-[181px] h-[64px] md:h-[96px] p-3 border border-gray-200 border-opacity-10">
+                <div className="text-sm md:text-lg font-bold">500+</div>
+                <div className="text-xs md:text-sm font-bold">Active Members</div>
               </div>
             </div>
 
