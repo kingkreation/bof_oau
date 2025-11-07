@@ -79,12 +79,9 @@ import React from 'react';
                         </ul>
                       </div>
                       <div className="relative">
-                        <img 
-                          src="/images/img_rectangle_24.png" 
-                          alt="Mission Visual" 
-                          className="w-full h-96 object-cover rounded-lg shadow-lg"
-                        />
-                        <div className="absolute inset-0 bg-primary-background bg-opacity-20 rounded-lg"></div>
+                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
+                          <span className="text-gray-500 text-lg">Mission Image Placeholder</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -105,38 +102,79 @@ import React from 'react';
                           <h2 className="text-3xl lg:text-4xl font-bold text-text-primary">Our Vision</h2>
                         </div>
                         <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                          To be Africa's leading student-driven organization in business and finance education, 
+                          To be Africa's leading student-driven organization in business and finance education,
                           recognized for producing exceptional graduates who transform the financial landscape across the continent.
                         </p>
-                        <div className="bg-primary-background bg-opacity-10 p-6 rounded-lg">
-                          <h3 className="text-xl font-semibold text-text-primary mb-4">Our Impact Goals</h3>
-                          <div className="grid sm:grid-cols-2 gap-4">
-                            <div className="text-center">
-                              <div className="text-2xl font-bold text-primary-background">500+</div>
-                              <div className="text-sm text-text-secondary">Students Empowered</div>
+                      </div>
+                      <div className="lg:order-1 relative">
+                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
+                          <span className="text-gray-500 text-lg">Vision Image Placeholder</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                {/* Impact Goals Section */}
+                <section className="w-full px-4 sm:px-6 lg:px-8 py-16 bg-white">
+                  <div className="max-w-7xl mx-auto">
+                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                      <div>
+                        <div className="flex items-center mb-6">
+                          <div className="w-12 h-12 bg-primary-background rounded-full flex items-center justify-center mr-4">
+                            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                            </svg>
+                          </div>
+                          <h2 className="text-3xl lg:text-4xl font-bold text-text-primary">Our Impact Goals</h2>
+                        </div>
+                        <p className="text-lg text-text-secondary mb-6 leading-relaxed">
+                          We measure our success through tangible outcomes that demonstrate our commitment to
+                          transforming African finance education and developing future leaders.
+                        </p>
+                        <div className="space-y-6">
+                          <div className="flex items-center">
+                            <div className="w-8 h-8 bg-primary-background rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                              <span className="text-white font-bold text-sm">500+</span>
                             </div>
-                            <div className="text-center">
-                              <div className="text-2xl font-bold text-primary-background">50+</div>
-                              <div className="text-sm text-text-secondary">Industry Partners</div>
+                            <div>
+                              <h3 className="font-semibold text-text-primary">Students Empowered</h3>
+                              <p className="text-sm text-text-secondary">Equipped with practical skills and industry knowledge</p>
                             </div>
-                            <div className="text-center">
-                              <div className="text-2xl font-bold text-primary-background">10+</div>
-                              <div className="text-sm text-text-secondary">Major Events</div>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-8 h-8 bg-primary-background rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                              <span className="text-white font-bold text-sm">50+</span>
                             </div>
-                            <div className="text-center">
-                              <div className="text-2xl font-bold text-primary-background">95%</div>
-                              <div className="text-sm text-text-secondary">Graduate Success Rate</div>
+                            <div>
+                              <h3 className="font-semibold text-text-primary">Industry Partners</h3>
+                              <p className="text-sm text-text-secondary">Collaborating organizations supporting our mission</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-8 h-8 bg-primary-background rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                              <span className="text-white font-bold text-sm">10+</span>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-text-primary">Major Events</h3>
+                              <p className="text-sm text-text-secondary">Annual conferences and workshops organized</p>
+                            </div>
+                          </div>
+                          <div className="flex items-center">
+                            <div className="w-8 h-8 bg-primary-background rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                              <span className="text-white font-bold text-sm">95%</span>
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-text-primary">Graduate Success Rate</h3>
+                              <p className="text-sm text-text-secondary">Alumni achieving career milestones</p>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="lg:order-1 relative">
-                        <img 
-                          src="/images/img_rectangle_25.png" 
-                          alt="Vision Visual" 
-                          className="w-full h-96 object-cover rounded-lg shadow-lg"
-                        />
-                        <div className="absolute inset-0 bg-primary-background bg-opacity-20 rounded-lg"></div>
+                      <div className="relative">
+                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
+                          <span className="text-gray-500 text-lg">Impact Goals Image Placeholder</span>
+                        </div>
                       </div>
                     </div>
                   </div>
