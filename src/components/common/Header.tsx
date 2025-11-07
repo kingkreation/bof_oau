@@ -52,8 +52,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   };
 
   return (
-    <header className={`w-full bg-header-background sticky top-0 z-30 ${className}`}>
-      <div className={`transition-transform duration-300 ease-in-out ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
+    <header className={`w-full sticky top-0 z-30 ${className}`}>
+      <div className={`bg-header-background transition-transform duration-300 ease-in-out ${showHeader ? 'translate-y-0' : '-translate-y-full'}`}>
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center w-full py-4 md:py-6">
             <Link to="/" className="flex justify-start items-center" onClick={closeMenu}>
