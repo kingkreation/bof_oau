@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from '../ui/Button';
 
@@ -21,8 +21,43 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   // State to track mobile menu open/closed status
   const [menuOpen, setMenuOpen] = useState(false);
+  // State to track if header should be shown
+  const [showHeader, setShowHeader] = useState(true);
+  // State to track last scroll position
+  const [lastScrollY, setLastScrollY] = useState(0);
   // Get current location to highlight active navigation item
   const location = useLocation();
+
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          const viewportHeight = window.innerHeight;
+
+          if (currentScrollY > viewportHeight) {
+            if (currentScrollY < lastScrollY) {
+              setShowHeader(true);
+            } else {
+              setShowHeader(false);
+            }
+          } else {
+            setShowHeader(true);
+          }
+
+          setLastScrollY(currentScrollY);
+          ticking = false;
+        });
+
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   /**
    * Toggle mobile menu open/closed
@@ -39,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   };
 
   return (
-    <header className={`w-full bg-header-background sticky top-0 z-30 ${className}`}>
+    <header className={`w-full bg-header-background sticky top-0 z-30 transition-transform duration-300 ease-in-out ${showHeader ? 'translate-y-0' : '-translate-y-full'} ${className}`}>
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center w-full py-4 md:py-6">
           {/* Logo and Organization Name Section */}
