@@ -84,7 +84,7 @@ const Structure = () => {
         {/* Core Divisions */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-center text-gray-900">Our Core Divisions</h2>
+            <h2 className="text-center font-bold text-gray-900">Our Core Divisions</h2>
             <p className="text-center text-gray-600 mt-3 max-w-2xl mx-auto">Three specialized divisions covering all aspects of modern finance</p>
 
             <div className="grid gap-8 mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
