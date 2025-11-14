@@ -102,11 +102,8 @@ import React from 'react';
                           recognized for producing exceptional graduates who transform the financial landscape across the continent.
                         </p>
                       </div>
-                      <div className="lg:order-1 relative">
-                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
-                          <span className="text-gray-500 text-lg">Vision Image Placeholder</span>
-                        </div>
-                      </div>
+                      <div className = "relative" >
+                    <img src="/images/vission.JPG"alt="vission image"className="w-full h-96 rounded-lg shadow-lg"/></div>
                     </div>
                   </div>
                 </section>
@@ -167,11 +164,8 @@ import React from 'react';
                           </div>
                         </div>
                       </div>
-                      <div className="relative">
-                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
-                          <span className="text-gray-500 text-lg">Impact Goals Image Placeholder</span>
-                        </div>
-                      </div>
+                      <div className = "relative" >
+                    <img src="/images/impact.JPG"alt="our impact image"className="w-full h-96 rounded-lg shadow-lg"/></div>
                     </div>
                   </div>
                 </section>
