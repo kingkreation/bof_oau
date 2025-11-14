@@ -37,7 +37,7 @@ const EventsProgramsSection = () => {
                 className="w-full lg:w-[42%] h-[250px] sm:h-[350px] lg:h-[422px] object-cover"
               />
               <div className="flex flex-col gap-[40px] w-full lg:flex-1">
-                <h3 className="text-[24px] sm:text-[36px] lg:text-[48px] font-normal leading-super-loose text-left text-text-primary">
+                <h3 className="text-[24px] sm:text-[32px] lg:text-[48px] font-normal leading-super-loose text-left text-text-primary">
                   FinTech Hackathon
                 </h3>
                 <p className="text-[16px] sm:text-[20px] lg:text-[24px] font-normal leading-medium text-left text-text-primary">
@@ -54,7 +54,7 @@ const EventsProgramsSection = () => {
                 className="w-full lg:w-[42%] h-[250px] sm:h-[350px] lg:h-[422px] object-cover"
               />
               <div className="flex flex-col gap-[36px] w-full lg:flex-1">
-                <h3 className="text-[24px] sm:text-[36px] lg:text-[48px] font-normal leading-super-loose text-left text-text-primary">
+                <h3 className="text-[24px] sm:text-[32px] lg:text-[48px] font-normal leading-super-loose text-left text-text-primary">
                   Bi-weekly General Meetings
                 </h3>
                 <p className="text-[16px] sm:text-[20px] lg:text-[24px] font-normal leading-medium text-left text-text-primary">
