@@ -9,7 +9,7 @@ const EvolutionSection = () => {
           <div className="flex flex-col lg:flex-row justify-start items-start gap-[40px] lg:gap-[80px]">
             {/* Left Content */}
             <div className="flex flex-col justify-start items-start w-full lg:w-[692px] gap-[18px]">
-              <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-text-primary font-[Inter] w-full max-w-[650px]">
+              <h2 className="font-medium text-left text-text-primary w-full max-w-[650px]">
                 The Evolution of BOF OAU Since 2011
               </h2>
               <Button

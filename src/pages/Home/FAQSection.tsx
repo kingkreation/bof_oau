@@ -41,7 +41,7 @@ const FAQSection = () => {
         <div className="flex flex-col lg:flex-row justify-start items-center gap-[40px] lg:gap-[80px] w-full max-w-[1198px] mx-auto px-4 sm:px-6 lg:px-8 py-[16px] sm:py-[20px] md:py-[24px]">
           {/* Left Section - Title */}
           <div className="flex flex-col justify-start items-start gap-[4px] sm:gap-[6px] w-full lg:w-[600px]">
-            <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-center lg:text-left text-text-primary font-[Inter]">
+            <h2 className="font-medium text-center lg:text-left text-text-primary">
               FAQ
             </h2>
             <p className="text-base font-normal leading-normal text-center lg:text-left text-text-primary font-[Inter]">

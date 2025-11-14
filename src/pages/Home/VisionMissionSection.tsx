@@ -6,7 +6,7 @@ const VisionMissionSection = () => {
       <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex flex-col justify-start items-center gap-[48px] sm:gap-[60px] md:gap-[78px] px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
-          <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-center text-text-primary font-[Inter] w-full max-w-[860px] mt-[12px]">
+          <h2 className="font-medium text-center text-text-primary w-full max-w-[860px] mt-[12px]">
             Our Vision and Mission at BOF OAU
           </h2>
 
