@@ -32,7 +32,7 @@ const FoundingStorySection = () => {
             >
               <div className="flex flex-col gap-[14px] items-center">
                 {/* Section Title */}
-                <h2 className="text-[24px] sm:text-[36px] lg:text-[48px] font-normal leading-super-loose text-center text-text-primary">
+                <h2 className="font-normal text-center text-text-primary">
                   Our Founding Story
                 </h2>
                 

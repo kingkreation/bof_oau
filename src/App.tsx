@@ -9,7 +9,7 @@ import Routes from './Routes';
  */
 const App: React.FC = () => {
   return (
-    <div className="app-container">
+    <div className="app-container font-sans">
       <Routes />
     </div>
   );

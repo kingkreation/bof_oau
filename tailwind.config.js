@@ -34,7 +34,6 @@ module.exports = {
           primary: "var(--border-primary)",
           secondary: "var(--border-secondary)"
         },
-        // Component-specific colors
         button: {
           background: "var(--button-bg)",
           text: "var(--button-text)",
@@ -88,6 +87,12 @@ module.exports = {
         '2xl': 'var(--spacing-2xl)',
         '3xl': 'var(--spacing-3xl)',
         '4xl': 'var(--spacing-4xl)'
+      },
+      fontFamily: {
+        sans: [
+          "Inter",
+          "sans-serif",
+        ],
       },
       borderRadius: {
         'sm': 'var(--radius-sm)',

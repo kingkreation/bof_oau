@@ -34,7 +34,7 @@ const FacultySection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full">
           {/* Section Title */}
-          <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-center text-text-primary font-[Inter]">
+          <h2 className="font-medium text-center text-text-primary">
             Our Faculty Advisers
           </h2>
 

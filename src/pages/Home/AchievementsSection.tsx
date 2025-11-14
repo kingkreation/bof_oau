@@ -30,7 +30,7 @@ const AchievementsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full">
           {/* Section Title */}
-          <h2 className="text-lg font-normal leading-relaxed text-center text-text-primary font-[Inter]">
+          <h2 className="font-normal text-center text-text-primary">
             Over 20 major competition victories and counting
           </h2>
 
