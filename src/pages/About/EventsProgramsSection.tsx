@@ -6,7 +6,7 @@ const EventsProgramsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[92px]">
         <div className="flex flex-col gap-[90px] items-center w-full">
           {/* Section Title */}
-          <h2 className="text-[32px] sm:text-[48px] lg:text-[64px] font-normal leading-mega-loose text-center text-text-primary">
+          <h2 className="text-center text-text-primary">
             Events & Programs
           </h2>
           

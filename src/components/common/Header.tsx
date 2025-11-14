@@ -159,7 +159,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       >
         <div className="flex flex-col h-full">
           <div className="flex justify-between items-center p-4 border-b">
-            <h2 className="text-lg font-semibold text-text-primary">Menu</h2>
+            <h2 className="text-text-primary">Menu</h2>
             <button 
               onClick={closeMenu}
               className="p-2"
