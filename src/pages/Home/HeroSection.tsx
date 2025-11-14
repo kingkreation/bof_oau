@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
 
           <div className="w-full max-w-[1185px] mx-auto">
           <img
-            className="w-full h-auto rounded-lg object-cover"
+            className="w-full h-auto rounded object-cover"
             alt="Faculty advisors and students at OAU"
             src="/images/img_rectangle_7.png" 
           />
