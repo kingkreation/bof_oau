@@ -85,12 +85,11 @@ const AboutSection: React.FC = () => {
 
             {/* Right Image - Showcasing BOF OAU Activities */}
             <div className="flex justify-center items-center w-full lg:w-[528px] lg:self-center">
-              <img 
-                src="/images/img_rectangle_2.png" 
-                alt="BOF OAU Members at a Financial Workshop" 
-                className="w-full max-w-[528px] h-[300px] sm:h-[400px] md:h-[572px] object-cover rounded-lg shadow-md"
-                loading="lazy"
-              />
+              <img
+              src = "/images/img_rectangle_2.png"
+                alt = "BOF OAU Members at a Financial Workshop"
+                className = "w-full max-w-[528px] h-[300px] sm:h-[400px] md:h-[572px] object-cover rounded shadow-md"
+                  loading = "lazy" />
             </div>
           </div>
         </div>
