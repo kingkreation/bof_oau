@@ -90,7 +90,7 @@ const Structure = () => {
             <div className="grid gap-8 mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-lg border border-gray-200 bg-gray-50 p-6">
                 <div className="text-sm font-semibold text-green-700">DIVISION 01</div>
-                <h3 className="text-xl font-meduim mt-2">Capital & Markets</h3>
+                <h3 className="text-xl md:text-2xl font-medium mt-2">Capital & Markets</h3>
                 <p className="text-gray-600 mt-2">Core financial markets operations focusing on investment strategies, trading excellence, and corporate finance mastery.</p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs">Investment Banking</span>
