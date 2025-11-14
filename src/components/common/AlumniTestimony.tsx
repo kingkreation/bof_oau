@@ -93,7 +93,7 @@ const AlumniTestimony: React.FC = () => {
         <div className="flex flex-col items-center gap-10 md:gap-[62px] w-full">
           {/* Section heading */}
           <div className="text-center mb-3">
-          <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-center text-text-primary font-[Inter] w-full max-w-[860px] mt-[12px]">
+          <h2 className="text-center text-text-primary w-full max-w-[860px] mt-[12px]">
               Alumni Testimonials
             </h2>
           </div>

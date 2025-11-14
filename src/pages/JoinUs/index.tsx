@@ -47,7 +47,7 @@ import React, { useState } from 'react';
                 {/* Hero Section */}
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
                   <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                    <h1 className="text-text-primary mb-6">
                       Join BOF OAU Today
                     </h1>
                     <p className="text-lg lg:text-xl text-text-secondary max-w-3xl mx-auto mb-8">
@@ -67,7 +67,7 @@ import React, { useState } from 'react';
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16 bg-white">
                   <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                      <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Why Join BOF OAU?</h2>
+                      <h2 className="text-text-primary mb-4">Why Join BOF OAU?</h2>
                       <p className="text-lg text-text-secondary max-w-2xl mx-auto">
                         Discover the exclusive benefits and opportunities available to our members
                       </p>
@@ -141,7 +141,7 @@ import React, { useState } from 'react';
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16">
                   <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
-                      <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Apply for Membership</h2>
+                      <h2 className="text-text-primary mb-4">Apply for Membership</h2>
                       <p className="text-lg text-text-secondary">
                         Complete the form below to begin your journey with BOF OAU
                       </p>
@@ -297,7 +297,7 @@ import React, { useState } from 'react';
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16 bg-white">
                   <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
-                      <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-4">Frequently Asked Questions</h2>
+                      <h2 className="text-text-primary mb-4">Frequently Asked Questions</h2>
                     </div>
 
                     <div className="space-y-6">

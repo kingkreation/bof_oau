@@ -84,7 +84,7 @@ const Structure = () => {
         {/* Core Divisions */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center text-gray-900">Our Core Divisions</h2>
+            <h2 className="text-center text-gray-900">Our Core Divisions</h2>
             <p className="text-center text-gray-600 mt-3 max-w-2xl mx-auto">Three specialized divisions covering all aspects of modern finance</p>
 
             <div className="grid gap-8 mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
@@ -132,7 +132,7 @@ const Structure = () => {
         {/* Subsidiaries */}
         <section className="py-16 bg-green-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold text-center">Internal Subsidiaries</h2>
+            <h2 className="text-center">Internal Subsidiaries</h2>
             <p className="text-center text-gray-700 mt-3">BOF OAU transcends traditional classroom learning through our student-led subsidiaries - innovative structures that provide analysts with unparalleled hands-on experience in three critical areas of modern finance.</p>
 
             <div className="mt-8 space-y-6">
@@ -199,7 +199,7 @@ const Structure = () => {
         {/* Join */}
         <section className="py-16 bg-white text-center">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold">Join Our Structure</h2>
+            <h2 className="">Join Our Structure</h2>
             <p className="max-w-3xl mx-auto mt-4 text-gray-700">Become part of Africa's most sophisticated student finance organization and gain hands-on experience across all divisions and subsidiaries.</p>
             <div className="mt-6 inline-block">
               <Button text="Become an Analyst" size="large" variant="outline" />

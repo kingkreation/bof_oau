@@ -7,7 +7,7 @@ const ContactSection = () => {
         <div className="flex flex-col justify-start items-center gap-[40px] sm:gap-[60px] md:gap-[80px] w-full">
           {/* Section Header */}
           <div className="flex flex-col justify-start items-center gap-[6px] sm:gap-[8px] text-center">
-            <h2 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-center text-text-primary font-[Inter]">
+            <h2 className="text-center text-text-primary">
               Get in touch
             </h2>
             <p className="text-base font-normal leading-normal text-center text-text-primary font-[Inter] max-w-[600px]">

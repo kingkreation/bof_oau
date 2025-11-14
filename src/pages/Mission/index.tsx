@@ -23,7 +23,7 @@ import React from 'react';
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
                   <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                      <h1 className="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                      <h1 className="text-text-primary mb-6">
                         Our Mission & Vision
                       </h1>
                       <p className="text-lg lg:text-xl text-text-secondary max-w-3xl mx-auto">
@@ -45,7 +45,7 @@ import React from 'react';
                               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                           </div>
-                          <h2 className="text-3xl lg:text-4xl font-bold text-text-primary">Our Mission</h2>
+                          <h2 className="text-text-primary">Our Mission</h2>
                         </div>
                         <p className="text-lg text-text-secondary mb-6 leading-relaxed">
                           To provide students at Obafemi Awolowo University with comprehensive business and finance education 
@@ -99,7 +99,7 @@ import React from 'react';
                               <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
                             </svg>
                           </div>
-                          <h2 className="text-3xl lg:text-4xl font-bold text-text-primary">Our Vision</h2>
+                          <h2 className="text-text-primary">Our Vision</h2>
                         </div>
                         <p className="text-lg text-text-secondary mb-6 leading-relaxed">
                           To be Africa's leading student-driven organization in business and finance education,
@@ -126,7 +126,7 @@ import React from 'react';
                               <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                             </svg>
                           </div>
-                          <h2 className="text-3xl lg:text-4xl font-bold text-text-primary">Our Impact Goals</h2>
+                          <h2 className="text-text-primary">Our Impact Goals</h2>
                         </div>
                         <p className="text-lg text-text-secondary mb-6 leading-relaxed">
                           We measure our success through tangible outcomes that demonstrate our commitment to
@@ -184,7 +184,7 @@ import React from 'react';
                 <section className="w-full px-4 sm:px-6 lg:px-8 py-16 bg-white">
                   <div className="max-w-7xl mx-auto">
                     <div className="text-center mb-16">
-                      <h2 className="text-3xl lg:text-4xl font-bold text-text-primary mb-6">Our Core Values</h2>
+                      <h2 className="text-text-primary mb-6">Our Core Values</h2>
                       <p className="text-lg text-text-secondary max-w-2xl mx-auto">
                         These values guide everything we do and shape the leaders we develop
                       </p>
