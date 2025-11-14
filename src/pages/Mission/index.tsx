@@ -77,12 +77,8 @@ import React from 'react';
                             <span className="text-text-secondary">Fostering leadership and entrepreneurial mindset</span>
                           </li>
                         </ul>
-                      </div>
-                      <div className="relative">
-                        <div className="w-full h-96 bg-gray-200 rounded-lg shadow-lg flex items-center justify-center">
-                          <span className="text-gray-500 text-lg">Mission Image Placeholder</span>
-                        </div>
-                      </div>
+                      </div> <div className = "relative" >
+                    <img src="/images/mission.JPG"alt="Mission image"className="w-full h-96 rounded-lg shadow-lg"/></div>
                     </div>
                   </div>
                 </section>
