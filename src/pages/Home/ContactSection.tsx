@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin, FaX, FaFacebook, FaInstagram } from 'react-icons/fa'; //
 
 const ContactSection = () => {
   return (
@@ -56,6 +57,22 @@ const ContactSection = () => {
                 <p className="text-base font-normal leading-normal text-center text-text-primary font-[Inter]">
                   Obafemi Awolowo University, Ile-Ife, Nigeria
                 </p>
+              </div>
+
+              {/* Social Media Links */}
+              <div className="flex justify-around items-center gap-[10px] mt-4">
+                <a href="https://www.linkedin.com/company/the-students-professional-bureau-of-finance-oau-ife/" target="_blank" rel="noopener noreferrer">
+                  <FaLinkedin className="text-text-primary hover:text-gray-500" size={30} />
+                </a>
+                <a href="https://x.com/bof_oau?t=u0bS9ewX7cPQL69A21Q4KA&s=09" target="_blank" rel="noopener noreferrer">
+                  <FaX className="text-text-primary hover:text-gray-500" size={30} />
+                </a>
+                <a href="https://www.facebook.com/bof.finance.3" target="_blank" rel="noopener noreferrer">
+                  <FaFacebook className="text-text-primary hover:text-gray-500" size={30} />
+                </a>
+                <a href="https://www.instagram.com/bof_oau?igsh=MWppMGp4YnB3ZDRzNQ==" target="_blank" rel="noopener noreferrer">
+                  <FaInstagram className="text-text-primary hover:text-gray-500" size={30} />
+                </a>
               </div>
             </div>
           </div>
