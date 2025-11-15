@@ -26,7 +26,7 @@ const FAQSection = () => {
     {
       id: "4",
       question: "What are your achievement?",
-      answer: "Consistent top-three finishes in global finance competitions like the CFA Researcg Challenge"
+      answer: "Consistent top-three finishes in global finance competitions like the CFA Research Challenge"
     },
     {
       id: "5",
@@ -42,7 +42,7 @@ const FAQSection = () => {
           {/* Left Section - Title */}
           <div className="flex flex-col justify-start items-start gap-[4px] sm:gap-[6px] w-full lg:w-[600px]">
             <h2 className="font-medium text-center lg:text-left text-text-primary">
-              FAQ
+              FAQs
             </h2>
             <p className="text-base font-normal leading-normal text-center lg:text-left text-text-primary font-[Inter]">
               Here are answers to the common questions asked.
