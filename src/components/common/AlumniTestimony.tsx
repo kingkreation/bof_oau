@@ -55,7 +55,7 @@ const AlumniTestimony: React.FC = () => {
     },
     {
       id: 5,
-      quote: "Leading the Finance 360 conference challenged my creative thinking for funding and awareness. The experience proved invaluable for my finance internship interviews and career foundation.",
+      quote: "Being part of BOF OAU was transformative! It taught me finance, teamwork, and confidence. The exposure, leadership opportunities, and friendships shaped me professionally and personally. I'm proud to be an alumnus and excited to see BOF OAU's future growth and impact!",
       name: "Kennedy Osigwe",
       position: "Senior Business Analyst",
       company: "Venture Garden Group",
