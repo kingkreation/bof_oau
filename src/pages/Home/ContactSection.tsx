@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaX, FaFacebook, FaInstagram } from 'react-icons/fa'; //
+import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'; //
 
 const ContactSection = () => {
   return (
@@ -65,7 +65,7 @@ const ContactSection = () => {
                   <FaLinkedin className="text-text-primary hover:text-gray-500" size={30} />
                 </a>
                 <a href="https://x.com/bof_oau?t=u0bS9ewX7cPQL69A21Q4KA&s=09" target="_blank" rel="noopener noreferrer">
-                  <FaX className="text-text-primary hover:text-gray-500" size={30} />
+                  <FaTwitter className="text-text-primary hover:text-gray-500" size={30} />
                 </a>
                 <a href="https://www.facebook.com/bof.finance.3" target="_blank" rel="noopener noreferrer">
                   <FaFacebook className="text-text-primary hover:text-gray-500" size={30} />
