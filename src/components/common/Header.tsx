@@ -140,7 +140,7 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 size="medium"
                 padding="8px"
                 className="min-w-[76px] hover:bg-primary-background transition-colors duration-200"
-                onClick={() => window.location.href = '/join-us'}
+                onClick={() => (window.location.href = 'https://medium.com/@bureauoffinance')}
               />
             </div>
           </div>
@@ -202,30 +202,30 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           </nav>
 
           <div className="p-4 border-t">
-            <Button
-              text="Join Us"
-              text_font_size="16"
-              text_font_family="Inter"
-              text_font_weight="500"
-              text_line_height="20px"
-              text_text_align="center"
-              text_color="#000000"
-              fill_background_color="#00713acc"
-              border_border_radius="8px"
-              border_border=""
-              layout_width="auto"
-              position="relative"
-              margin="0"
-              variant="primary"
-              size="medium"
-              padding="8px"
-              className="w-full hover:bg-primary-background transition-colors duration-200"
-              onClick={() => {
-                closeMenu();
-                window.location.href = '/join-us';
-              }}
-            />
-          </div>
+              <Button
+                text="Join Us"
+                text_font_size="16"
+                text_font_family="Inter"
+                text_font_weight="500"
+                text_line_height="20px"
+                text_text_align="center"
+                text_color="#000000"
+                fill_background_color="#00713acc"
+                border_border_radius="8px"
+                border_border=""
+                layout_width="auto"
+                position="relative"
+                margin="0"
+                variant="primary"
+                size="medium"
+                padding="8px"
+                className="w-full hover:bg-primary-background transition-colors duration-200"
+                onClick={() => {
+                  closeMenu();
+                  window.location.href = 'https://medium.com/@bureauoffinance';
+                }}
+              />
+            </div>
         </div>
       </div>
     </header>

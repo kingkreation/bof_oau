@@ -9,14 +9,13 @@ import HomePage from './pages/Home';
 import AboutPage from './pages/About';
 import MissionPage from './pages/Mission';
 import StructurePage from './pages/Structure';
-import JoinUsPage from './pages/JoinUs';
 
 /**
  * AppRoutes component that handles all application routing
  * This component defines the navigation structure of our application
  * and maps URL paths to their corresponding page components
  * 
- * @returns A configured Router with all application routes
+ * Note: JoinUs page/route has been removed and join actions now point to an external link.
  */
 const AppRoutes: React.FC = () => {
   return (
@@ -27,7 +26,6 @@ const AppRoutes: React.FC = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/mission" element={<MissionPage />} />
         <Route path="/structure" element={<StructurePage />} />
-        <Route path="/join-us" element={<JoinUsPage />} />
       </Routes>
     </Router>
   );

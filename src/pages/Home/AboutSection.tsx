@@ -79,7 +79,7 @@ const AboutSection: React.FC = () => {
                 size="medium"
                 padding="12px 24px"
                 className="w-auto mt-[16px] sm:mt-[24px] hover:bg-primary-background transition-colors duration-200"
-                onClick={() => navigate('/join-us')}
+                onClick={() => (window.location.href = 'https://medium.com/@bureauoffinance')}
               />
             </div>
 

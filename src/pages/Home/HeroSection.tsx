@@ -2,30 +2,17 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Button from '../../components/ui/Button';
 
-/**
- * HeroSection component
- * 
- * This is the main banner section displayed at the top of the home page.
- * It includes a headline, description, call-to-action buttons, and a hero image.
- * The component is fully responsive across different screen sizes.
- * 
- * @returns A hero section with headline, description, CTAs and image
- */
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   
-  /**
-   * Navigate to Join Us page
-   */
+  // updated to point to external Medium page
   const handleJoinClick = () => {
-    navigate('/join-us');
+    window.location.href = 'https://medium.com/@bureauoffinance';
   };
   
-  /**
-   * Navigate to About page for more information
-   */
+  // if you want Learn more to go to the external link as well:
   const handleLearnMoreClick = () => {
-    navigate('/about');
+    window.location.href = 'https://medium.com/@bureauoffinance';
   };
   
   return (
@@ -39,7 +26,6 @@ const HeroSection: React.FC = () => {
           Empowering Future Financial Leaders at OAU
         </h1>
 
-            {/* Description - Improved readability with better line height */}
             <p className="w-full max-w-[713px] mx-auto font-normal text-black text-base text-center tracking-[0] leading-[normal] mb-10">
           Join BOF OAU, Nigeria&#39;s premier student finance club, where
           passion meets opportunity. Together, we cultivate the next generation
@@ -47,9 +33,8 @@ const HeroSection: React.FC = () => {
           experiences.
         </p>
 
-            {/* CTA Buttons - Improved mobile responsiveness */}
             <div className="mt-6 inline-block">
-              <Button text="Become an Analyst" size="large" variant="outline" />
+              <Button text="Become an Analyst" size="large" variant="outline" onClick={handleJoinClick} />
             </div>
           </div>
 
