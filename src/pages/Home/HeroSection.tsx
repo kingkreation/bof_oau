@@ -11,24 +11,24 @@ const HeroSection: React.FC = () => {
   };
   
   return (
-    <section className="w-full bg-background-main pt-8 md:pt-12 lg:pt-16">
+    <section className="w-full bg-background-main pt-6 sm:pt-8 md:pt-12 lg:pt-16">
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center w-full gap-[32px] sm:gap-[40px] md:gap-[52px]">
+        <div className="flex flex-col justify-start items-center w-full gap-[24px] sm:gap-[32px] md:gap-[40px] lg:gap-[52px]">
           {/* Hero Content */}
           <div className="flex flex-col justify-start items-center w-full max-w-[892px]">
             {/* Main Heading */}
-            <h1 className="w-full max-w-[892px] mx-auto text-center text-text-primary mb-8">
+            <h1 className="w-full max-w-[892px] mx-auto text-center text-text-primary mb-4 sm:mb-6 md:mb-8">
           Empowering Future Financial Leaders at OAU
         </h1>
 
-            <p className="w-full max-w-[713px] mx-auto font-normal text-black text-base text-center tracking-[0] leading-[normal] mb-10">
+            <p className="w-full max-w-[713px] mx-auto font-normal text-black text-sm sm:text-base md:text-lg text-center tracking-[0] leading-relaxed mb-6 sm:mb-8 md:mb-10 px-2">
           Join BOF OAU, Nigeria&#39;s premier student finance club, where
           passion meets opportunity. Together, we cultivate the next generation
           of financial professionals through innovative training and real-world
           experiences.
         </p>
 
-            <div className="mt-6 inline-block">
+            <div className="mt-2 sm:mt-4 md:mt-6 inline-block">
               <Button text="Become an Analyst" size="large" variant="outline" onClick={handleBecomeAnalyst} />
             </div>
           </div>

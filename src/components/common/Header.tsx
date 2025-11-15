@@ -57,23 +57,23 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center w-full py-4 md:py-6">
             <Link to="/" className="flex justify-start items-center" onClick={closeMenu}>
-              <div className="flex items-center gap-4">
-                <div className="relative flex-shrink-0 w-[60px] sm:w-[70px] md:w-[80px]">
+              <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
+                <div className="relative flex-shrink-0 w-[45px] sm:w-[60px] md:w-[70px] lg:w-[80px]">
                   <img 
                     src="/images/img_d64c46b0a850558.png" 
                     alt="BOF OAU Logo" 
-                    className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] object-contain"
+                    className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] object-contain"
                   />
                   <img 
                     src="/images/img_d64c46b0a850558.png" 
                     alt="BOF OAU Logo Overlay" 
-                    className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] -mt-[60px] sm:-mt-[70px] md:-mt-[80px] object-contain opacity-80"
+                    className="w-[45px] h-[45px] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px] lg:w-[80px] lg:h-[80px] -mt-[45px] sm:-mt-[60px] md:-mt-[70px] lg:-mt-[80px] object-contain opacity-80"
                   />
                 </div>
 
                 <div className="text-left leading-tight">
-                  <div className="text-sm sm:text-base md:text-lg font-bold text-black">The Students' Professional</div>
-                  <div className="text-sm sm:text-base md:text-lg font-bold text-black">Bureau of Finance, OAU</div>
+                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-black">The Students' Professional</div>
+                  <div className="text-xs sm:text-sm md:text-base lg:text-lg font-bold text-black">Bureau of Finance, OAU</div>
                 </div>
               </div>
             </Link>

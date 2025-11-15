@@ -34,26 +34,26 @@ const AboutSection: React.FC = () => {
             {/* Left Content - Text and Statistics */}
             <div className="flex flex-col justify-start items-start w-full lg:w-[656px] gap-[24px] sm:gap-[32px] md:gap-[40px]">
               {/* Heading and Introduction */}
-              <div className="flex flex-col justify-start items-start w-full gap-[16px] sm:gap-[18px]">
+              <div className="flex flex-col justify-start items-start w-full gap-[12px] sm:gap-[16px] md:gap-[18px]">
                 <h2 className="text-left text-text-primary">
                   Empower
                 </h2>
-                 <h3 className="text-[32px] sm:text-[48px] md:text-2xl font-medium leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-text-primary font-[Inter] w-full max-w-[650px]">
+                 <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight sm:leading-snug md:leading-relaxed text-left text-text-primary font-[Inter] w-full max-w-[650px]">
               Leading Student Finance Organization in Africa
             </h3>
-                <p className="text-base sm:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full max-w-[590px]">
+                <p className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full max-w-[590px]">
                   BOF OAU is Nigeria's first student-led finance club, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape.
                 </p>
               </div>
 
               {/* Key Statistics */}
-              <div className="flex flex-col sm:flex-row justify-start items-start gap-[24px] sm:gap-[40px] w-full">
+              <div className="flex flex-col sm:flex-row justify-start items-start gap-[20px] sm:gap-[30px] md:gap-[40px] w-full">
                 {stats.map((stat, index) => (
-                  <div key={index} className="flex flex-col justify-start items-start gap-[10px] w-full sm:w-auto">
-                    <span className="text-[32px] sm:text-[48px] md:text-[56px] font-normal leading-[38px] sm:leading-[58px] md:leading-extra-loose text-left text-primary-background font-[Inter]">
+                  <div key={index} className="flex flex-col justify-start items-start gap-[8px] sm:gap-[10px] w-full sm:w-auto">
+                    <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-left text-primary-background font-[Inter]">
                       {stat.value}
                     </span>
-                    <p className="text-base font-normal leading-tight text-left text-text-primary font-[Inter] max-w-[270px]">
+                    <p className="text-sm sm:text-base font-normal leading-tight text-left text-text-primary font-[Inter] max-w-[270px]">
                       {stat.description}
                     </p>
                   </div>
@@ -88,7 +88,7 @@ const AboutSection: React.FC = () => {
               <img
               src = "/images/img_rectangle_2.png"
                 alt = "BOF OAU Members at a Financial Workshop"
-                className = "w-full max-w-[528px] h-[300px] sm:h-[400px] md:h-[572px] object-cover rounded shadow-md"
+                className = "w-full max-w-[528px] h-[250px] sm:h-[350px] md:h-[450px] lg:h-[572px] object-cover rounded shadow-md"
                   loading = "lazy" />
             </div>
           </div>
