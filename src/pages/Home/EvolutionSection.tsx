@@ -17,7 +17,7 @@ const EvolutionSection = () => {
             className="w-fit h-auto px-4 py-2.5 rounded-lg border-2 border-[#00713acc] hover:bg-[#00713a0d]"
           >
             <span className="font-medium text-black text-base tracking-[0] leading-[normal]">
-              Learn More
+              Become an Analyst
             </span>
           </Button>
             </div>
