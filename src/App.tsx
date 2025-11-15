@@ -1,5 +1,6 @@
 import React from 'react';
 import Routes from './Routes';
+import ErrorBoundary from './components/common/ErrorBoundary';
 
 /**
  * Main App component that serves as the entry point for our application.
@@ -9,9 +10,11 @@ import Routes from './Routes';
  */
 const App: React.FC = () => {
   return (
-    <div className="app-container font-sans">
-      <Routes />
-    </div>
+    <ErrorBoundary>
+      <div className="app-container font-sans">
+        <Routes />
+      </div>
+    </ErrorBoundary>
   );
 };
 

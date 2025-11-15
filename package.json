@@ -54,26 +54,29 @@
     "@dhiwise/component-tagger": "^1.0.10",
     "@tailwindcss/typography": "^0.5.16",
     "class-variance-authority": "^0.7.1",
+    "framer-motion": "^12.23.24",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^5.5.0",
     "react-router-dom": "6.0.2",
     "recharts": "^2.15.2",
+    "sharp": "^0.34.5",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
     "@types/react-helmet": "^6.1.11",
-    "@vitejs/plugin-react": "4.3.4",
+    "@vitejs/plugin-react": "^5.1.1",
     "autoprefixer": "10.4.2",
     "globals": "^15.15.0",
     "postcss": "^8.5.6",
     "prettier": "^3.5.3",
     "tailwindcss": "3.4.6",
     "typescript": "~5.7.2",
-    "vite": "^5.4.20"
+    "vite": "^7.2.2"
   }
 }
