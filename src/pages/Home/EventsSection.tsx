@@ -38,8 +38,8 @@ const EventsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[48px] sm:gap-[60px] md:gap-[72px] w-full">
           {/* Section Header */}
-          <div className="flex flex-col justify-start items-center font-bold gap-[16px] sm:gap-[20px] text-center">
-            <h2 className="text-center text-text-primary">
+          <div className="flex flex-col justify-start items-center gap-[16px] sm:gap-[20px] text-center">
+            <h2 className="text-center font-bold text-text-primary">
               Event Highlights
             </h2>
             <p className="text-base font-normal leading-normal text-center text-text-primary font-[Inter]">
@@ -67,8 +67,8 @@ const EventsSection = () => {
                 />
                 <h3 className={`${
                   index === 1 
-                    ? 'text-xl sm:text-2xl md:text-xl font-medium leading-[16px] sm:leading-[28px] md:leading-loose' 
-                    : 'text-xl sm:text-2xl md:text-xl font-medium leading-[16px] sm:leading-[28px] md:leading-loose'
+                    ? 'text-xl sm:text-2xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose' 
+                    : 'text-xl sm:text-2xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose'
                 } text-center text-text-primary font-[Inter] w-full`}>
                   {event.title}
                 </h3>
