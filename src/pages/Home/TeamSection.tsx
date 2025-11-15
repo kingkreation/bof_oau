@@ -119,10 +119,10 @@ const TeamSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full max-w-[1184px] mx-auto">
           {/* Section Header */}
-          <div className="flex flex-col justify-start items-center gap-[16px] sm:gap-[20px] md:gap-[24px] text-center">
-            <h2 className="text-center text-text-primary">
-              Team
-            </h2>
+          <div className="flex flex-col justify-start items-center gap-[16px] sm:gap-[24px] md:gap-[24px] text-center">
+            <h2 className="text-center text-text-primary font-bold text-lg sm:text-xl md:text-2xl leading-tight mb-4">
+  Team
+</h2>
             <p className="text-base font-normal leading-normal text-center text-text-primary font-[Inter] max-w-[600px]">
               Meet the passionate individuals driving our mission forward
             </p>
