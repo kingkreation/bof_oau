@@ -6,13 +6,8 @@ const HeroSection: React.FC = () => {
   const navigate = useNavigate();
   
   // updated to point to external Medium page
-  const handleJoinClick = () => {
-    window.location.href = 'https://medium.com/@bureauoffinance';
-  };
-  
-  // if you want Learn more to go to the external link as well:
-  const handleLearnMoreClick = () => {
-    window.location.href = 'https://medium.com/@bureauoffinance';
+  const handleBecomeAnalyst = () => {
+    window.location.href = 'https://forms.gle/fDiLo3HFRZCsNpYz6';
   };
   
   return (
@@ -34,7 +29,7 @@ const HeroSection: React.FC = () => {
         </p>
 
             <div className="mt-6 inline-block">
-              <Button text="Become an Analyst" size="large" variant="outline" onClick={handleJoinClick} />
+              <Button text="Become an Analyst" size="large" variant="outline" onClick={handleBecomeAnalyst} />
             </div>
           </div>
 

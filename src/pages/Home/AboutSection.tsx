@@ -68,7 +68,7 @@ const AboutSection: React.FC = () => {
                 text_font_weight="500"
                 text_line_height="20px"
                 text_text_align="center"
-                text_color="#000000"
+                text_color="#ffffff"
                 fill_background_color="#00713acc"
                 border_border_radius="8px"
                 border_border="none"
