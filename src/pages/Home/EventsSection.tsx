@@ -67,8 +67,8 @@ const EventsSection = () => {
                 />
                 <h3 className={`${
                   index === 1 
-                    ? 'text-xl sm:text-2xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose' 
-                    : 'text-xl sm:text-2xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose'
+                    ? 'text-lg sm:text-xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose' 
+                    : 'text-lg sm:text-xl md:text-xl font-medium leading-[28px] sm:leading-[32px] md:leading-loose'
                 } text-center text-text-primary font-[Inter] w-full`}>
                   {event.title}
                 </h3>
