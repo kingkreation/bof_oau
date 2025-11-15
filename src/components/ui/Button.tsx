@@ -78,7 +78,7 @@ const Button: React.FC<ButtonProps> = ({
   text_font_weight = "500",
   text_line_height = "20px",
   text_text_align = "left",
-  text_color = "#000000",
+  text_color = "#ffffff",
   fill_background_color = "#00713acc",
   border_border_radius = "8px",
   
@@ -157,8 +157,8 @@ const Button: React.FC<ButtonProps> = ({
 
   // Convert text color to Tailwind class or custom value
   const getTextColor = (color: string) => {
-    if (color === "#000000") return "text-text-primary";
-    if (color === "#FFFFFF") return "text-white";
+    if (color === "#ffffff") return "text-text-primary";
+    if (color === "#000000") return "text-white";
     return `text-[${color}]`;
   };
 

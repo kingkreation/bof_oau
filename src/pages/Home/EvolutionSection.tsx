@@ -12,16 +12,17 @@ const EvolutionSection = () => {
               <h2 className="font-medium text-left text-text-primary w-full max-w-[650px]">
                 The Evolution of BOF OAU Since 2011
               </h2>
-              <Button
-            variant="outline"
-            className="w-fit h-auto px-4 py-2.5 rounded-lg border-2 border-[#00713acc] hover:bg-[#00713a0d]"
-          >
-            <span className="font-medium text-black text-base tracking-[0] leading-[normal]">
-              Become an Analyst
-            </span>
-          </Button>
-            </div>
-
+              <a href="https://forms.gle/fDiLo3HFRZCsNpYz6" target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  className="w-fit h-auto px-4 py-2.5 rounded-lg border-2 border-[#00713acc] hover:bg-[#00713a0d]"
+                >
+                  <span className="font-medium text-black text-base tracking-[0] leading-[normal]">
+                    Become an Analyst
+                  </span>
+                </Button>
+              </a>
+              </div>
             {/* Right Timeline */}
             <div className="flex flex-col justify-start items-end w-full lg:w-[506px] lg:self-center">
               <div className="flex flex-col justify-start items-start gap-[20px] sm:gap-[30px] w-full max-w-[458px] ml-[38px]">
