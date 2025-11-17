@@ -72,8 +72,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 </div>
 
                 <div className="text-left leading-tight">
-                  <div className="text-xs sm:text-sm md:text-base font-bold text-black">The Students' Professional</div>
-                  <div className="text-xs sm:text-sm md:text-base font-bold text-black">Bureau of Finance, OAU</div>
+                  <div className="text-caption sm:text-subtitle font-semibold text-black">The Students' Professional</div>
+                  <div className="text-caption sm:text-subtitle font-semibold text-black">Bureau of Finance, OAU</div>
                 </div>
               </div>
             </Link>
@@ -98,24 +98,24 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               <nav className="flex flex-row justify-between items-center gap-6">
                 <Link 
                   to="/about" 
-                  className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                    location.pathname === '/about' ? 'text-primary-background font-medium' : 'text-text-primary'
+                  className={`text-body font-medium leading-normal transition-colors duration-200 hover:text-primary-background ${
+                    location.pathname === '/about' ? 'text-primary-background font-semibold' : 'text-text-primary'
                   }`}
                 >
                   About us
                 </Link>
                 <Link 
                   to="/mission" 
-                  className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                    location.pathname === '/mission' ? 'text-primary-background font-medium' : 'text-text-primary'
+                  className={`text-body font-medium leading-normal transition-colors duration-200 hover:text-primary-background ${
+                    location.pathname === '/mission' ? 'text-primary-background font-semibold' : 'text-text-primary'
                   }`}
                 >
                   Our Mission
                 </Link>
                 <Link 
                   to="/structure" 
-                  className={`text-base font-normal leading-normal transition-colors duration-200 hover:text-primary-background ${
-                    location.pathname === '/structure' ? 'text-primary-background font-medium' : 'text-text-primary'
+                  className={`text-body font-medium leading-normal transition-colors duration-200 hover:text-primary-background ${
+                    location.pathname === '/structure' ? 'text-primary-background font-semibold' : 'text-text-primary'
                   }`}
                 >
                   Our Structure
@@ -174,8 +174,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
           <nav className="flex flex-col flex-1 p-4 gap-4">
             <Link 
               to="/about" 
-              className={`text-base sm:text-lg font-normal leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
-                location.pathname === '/about' ? 'text-primary-background bg-green-50 font-medium' : 'text-text-primary'
+              className={`text-body-lg font-medium leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
+                location.pathname === '/about' ? 'text-primary-background bg-green-50 font-semibold' : 'text-text-primary'
               }`}
               onClick={closeMenu}
             >
@@ -183,8 +183,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             </Link>
             <Link 
               to="/mission" 
-              className={`text-base sm:text-lg font-normal leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
-                location.pathname === '/mission' ? 'text-primary-background bg-green-50 font-medium' : 'text-text-primary'
+              className={`text-body-lg font-medium leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
+                location.pathname === '/mission' ? 'text-primary-background bg-green-50 font-semibold' : 'text-text-primary'
               }`}
               onClick={closeMenu}
             >
@@ -192,8 +192,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             </Link>
             <Link 
               to="/structure" 
-              className={`text-base sm:text-lg font-normal leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
-                location.pathname === '/structure' ? 'text-primary-background bg-green-50 font-medium' : 'text-text-primary'
+              className={`text-body-lg font-medium leading-relaxed transition-colors duration-200 hover:text-primary-background py-3 px-2 rounded-lg hover:bg-gray-50 ${
+                location.pathname === '/structure' ? 'text-primary-background bg-green-50 font-semibold' : 'text-text-primary'
               }`}
               onClick={closeMenu}
             >

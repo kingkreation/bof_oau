@@ -104,10 +104,10 @@ const TeamSection = () => {
         } object-cover rounded-lg`}
       />
       <div className="flex flex-col justify-start items-center gap-[4px] text-center">
-        <h3 className="text-base sm:text-lg md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter]">
+        <h4 className="text-center text-text-primary font-[Inter]">
           {member.name}
-        </h3>
-        <p className="text-xs sm:text-sm md:text-sm font-normal leading-relaxed text-center text-text-primary font-[Inter]">
+        </h4>
+        <p className="text-subtitle text-center text-text-primary font-[Inter]">
           {member.position}
         </p>
       </div>
@@ -120,10 +120,10 @@ const TeamSection = () => {
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full max-w-[1184px] mx-auto">
           {/* Section Header */}
           <div className="flex flex-col justify-start items-center gap-[12px] sm:gap-[16px] md:gap-[24px] text-center">
-            <h2 className="text-center text-text-primary font-bold text-lg sm:text-xl md:text-2xl leading-tight mb-2 sm:mb-4">
+            <h2 className="section-title mb-2 sm:mb-4">
   Team
 </h2>
-            <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter] max-w-[600px]">
+            <p className="section-subtitle max-w-[600px]">
               Meet the passionate individuals driving our mission forward
             </p>
           </div>

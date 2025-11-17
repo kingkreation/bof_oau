@@ -6,7 +6,7 @@ const VisionMissionSection = () => {
       <div className="w-full max-w-[1440px] mx-auto">
         <div className="flex flex-col justify-start items-center gap-[48px] sm:gap-[60px] md:gap-[78px] px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium text-center text-text-primary w-full max-w-[860px] mt-[12px] leading-tight sm:leading-relaxed">
+          <h2 className="section-title w-full max-w-[860px] mt-[12px]">
             Our Vision and Mission at BOF OAU
           </h2>
 
@@ -14,10 +14,10 @@ const VisionMissionSection = () => {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-[40px] lg:gap-[80px] w-full max-w-[1198px]">
             {/* Vision & Mission Text */}
             <div className="w-full lg:w-[456px] mt-0 lg:mt-[112px]">
-              <p className="text-sm sm:text-base font-medium leading-relaxed text-left text-text-primary font-[Inter] w-full">
-                <span className="font-semibold text-primary-background">Vision:</span> To be Africa's leading student-led finance organization, producing world-class financial professionals with technical expertise, innovative thinking, and ethical leadership.
+              <p className="text-body text-left w-full">
+                <span className="text-body-bold text-primary-background">Vision:</span> To be Africa's leading student-led finance organization, producing world-class financial professionals with technical expertise, innovative thinking, and ethical leadership.
                 <br /><br />
-                <span className="font-semibold text-primary-background">Mission:</span> Empower students with practical financial skills, industry exposure, and leadership development through cutting-edge training, competitions, and networking opportunities.
+                <span className="text-body-bold text-primary-background">Mission:</span> Empower students with practical financial skills, industry exposure, and leadership development through cutting-edge training, competitions, and networking opportunities.
               </p>
             </div>
 

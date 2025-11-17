@@ -38,10 +38,10 @@ const AboutSection: React.FC = () => {
                 <h2 className="text-left text-text-primary">
                   Empower
                 </h2>
-                 <h3 className="text-2xl sm:text-3xl md:text-[32px] lg:text-[48px] font-medium leading-tight sm:leading-[38px] md:leading-[42px] lg:leading-[58px] text-left text-text-primary font-[Inter] w-full">
+                 <h2 className="text-left text-text-primary w-full">
               Leading Student Finance Organization in Africa
-            </h3>
-                <p className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full">
+            </h2>
+                <p className="text-body text-left w-full">
                   BOF OAU is Nigeria's first student-led finance club, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape.
                 </p>
               </div>
@@ -50,10 +50,10 @@ const AboutSection: React.FC = () => {
               <div className="flex flex-col sm:flex-row justify-start items-start gap-[20px] sm:gap-[32px] md:gap-[40px] w-full">
                 {stats.map((stat, index) => (
                   <div key={index} className="flex flex-col justify-start items-start gap-[8px] sm:gap-[10px] w-full sm:w-auto">
-                    <span className="text-3xl sm:text-4xl md:text-5xl font-normal leading-tight sm:leading-[38px] md:leading-[42px] text-left text-primary-background font-[Inter]">
+                    <span className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-tight text-left text-primary-background font-[Inter]">
                       {stat.value}
                     </span>
-                    <p className="text-sm sm:text-base font-normal leading-relaxed text-left text-text-primary font-[Inter] max-w-[270px]">
+                    <p className="text-body text-left max-w-[270px]">
                       {stat.description}
                     </p>
                   </div>

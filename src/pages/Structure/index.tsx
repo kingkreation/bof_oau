@@ -75,7 +75,7 @@ const Structure = () => {
         {/* Intro */}
         <section className="py-8 sm:py-12">
           <div className="container mx-auto text-center px-4">
-            <p className="max-w-3xl mx-auto text-sm sm:text-base text-gray-700 leading-relaxed">
+            <p className="max-w-3xl mx-auto text-body text-gray-700">
               A sophisticated organizational structure designed to mirror real-world financial institutions while fostering leadership development.
             </p>
           </div>
@@ -84,45 +84,45 @@ const Structure = () => {
         {/* Core Divisions */}
         <section className="py-12 sm:py-16 bg-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-center font-bold text-gray-900 leading-relaxed">Our Core Divisions</h2>
-            <p className="text-sm sm:text-base text-center text-gray-600 mt-2 sm:mt-3 max-w-2xl mx-auto leading-relaxed">Three specialized divisions covering all aspects of modern finance</p>
+            <h2 className="section-title text-gray-900">Our Core Divisions</h2>
+            <p className="text-body text-center text-gray-600 mt-2 sm:mt-3 max-w-2xl mx-auto">Three specialized divisions covering all aspects of modern finance</p>
 
             <div className="grid gap-6 sm:gap-8 mt-6 sm:mt-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 sm:p-6">
-                <div className="text-xs sm:text-sm font-semibold text-green-700">DIVISION 01</div>
-                <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[32px] font-normal leading-tight sm:leading-relaxed text-text-primary mt-1">Capital & Markets</h3>
-                <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">Core financial markets operations focusing on investment strategies, trading excellence, and corporate finance mastery.</p>
+                <div className="text-caption font-semibold text-green-700">DIVISION 01</div>
+                <h3 className="card-title mt-1 text-text-primary">Capital & Markets</h3>
+                <p className="text-body text-gray-600 mt-2">Core financial markets operations focusing on investment strategies, trading excellence, and corporate finance mastery.</p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3 sm:mt-4">
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Investment Banking</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Alternative Investments</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Sales & Trading</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">M&amp;A Analysis</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Derivatives</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Investment Banking</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Alternative Investments</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Sales & Trading</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">M&amp;A Analysis</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Derivatives</span>
                 </div>
               </div>
 
               <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 sm:p-6">
-                <div className="text-xs sm:text-sm font-semibold text-green-700">DIVISION 02</div>
-                <h3 className="text-lg sm:text-xl font-bold mt-1 leading-relaxed">Research & Innovation</h3>
-                <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">Cutting-edge financial research and technological advancement driving industry innovation.</p>
+                <div className="text-caption font-semibold text-green-700">DIVISION 02</div>
+                <h3 className="card-title mt-1">Research & Innovation</h3>
+                <p className="text-body text-gray-600 mt-2">Cutting-edge financial research and technological advancement driving industry innovation.</p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3 sm:mt-4">
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Financial Research</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">FinTech Development</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Energy Finance</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Infrastructure</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Financial Research</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">FinTech Development</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Energy Finance</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Infrastructure</span>
                 </div>
               </div>
 
               <div className="rounded-lg border border-gray-200 bg-gray-50 p-4 sm:p-6">
-                <div className="text-xs sm:text-sm font-semibold text-green-700">DIVISION 03</div>
-                <h3 className="text-lg sm:text-xl font-bold mt-1 leading-relaxed">Operations & Advisory</h3>
-                <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">Strategic operations, professional development, and organizational excellence across all BOF initiatives.</p>
+                <div className="text-caption font-semibold text-green-700">DIVISION 03</div>
+                <h3 className="card-title mt-1">Operations & Advisory</h3>
+                <p className="text-body text-gray-600 mt-2">Strategic operations, professional development, and organizational excellence across all BOF initiatives.</p>
                 <div className="flex flex-wrap gap-1 sm:gap-2 mt-3 sm:mt-4">
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Management Consulting</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Financial Operations</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Programs &amp; Events</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">People &amp; Culture</span>
-                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Public Relations</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Management Consulting</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Financial Operations</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Programs &amp; Events</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">People &amp; Culture</span>
+                  <span className="inline-block bg-green-100 text-green-800 px-2 py-1 rounded-full text-caption">Public Relations</span>
                 </div>
               </div>
             </div>

@@ -32,21 +32,21 @@ const FoundingStorySection = () => {
             >
               <div className="flex flex-col gap-[10px] sm:gap-[14px] items-center">
                 {/* Section Title */}
-                <h2 className="text-lg sm:text-xl md:text-2xl text-center text-text-primary leading-relaxed">
+                <h2 className="section-title">
                   Our Founding Story
                 </h2>
                 
                 {/* Story Content */}
                 <div className="w-full sm:w-[96%]">
-                  <p className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-left text-text-primary">
+                  <p className="text-body text-left">
                     In the early 2010s, the global financial landscape was undergoing seismic shifts in the wake of the 2008 crisis. In Nigeria, a new generation of economic potential was emerging, yet a critical gap persisted between academic theory and the dynamic, practical realities of the financial world. Students at Obafemi Awolowo University (OAU), renowned for their academic excellence, were seeking more than textbooks; they craved real-world skills, industry exposure, and a platform to translate knowledge into impact.
                   </p>
                   <br />
-                  <p className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-left text-text-primary">
+                  <p className="text-body text-left">
                     Recognizing this imperative, the Department of Management and Accounting took a visionary step in 2011. They conceived and established The Students' Professional Bureau of Finance (BOF), not merely as a club, but as a groundbreaking experiment in experiential learning. It was christened Nigeria's first student-led finance bureau, a deliberate distinction from a typical club, signaling its mission to operate with the professionalism, rigor, and strategic focus of a real-world financial institution.
                   </p>
                   <br />
-                  <p className="text-sm sm:text-base md:text-lg font-normal leading-relaxed text-left text-text-primary">
+                  <p className="text-body text-left">
                     From a bold idea in 2011, BOF OAU has evolved into a premier finance ecosystem. Its journey from a pioneering initiative to a multi-divisional bureau with a proven track record of producing world-class talent is a testament to the foresight of its founders and the relentless drive of every student who has passed through its ranks. Today, BOF OAU stands as the realization of that initial vision: a vibrant, professional launchpad empowering the next generation of Africa's financial leaders.
                   </p>
                 </div>

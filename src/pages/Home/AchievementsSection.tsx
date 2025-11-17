@@ -30,7 +30,7 @@ const AchievementsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full">
           {/* Section Title */}
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-normal text-center text-text-primary leading-relaxed">
+          <h2 className="section-title">
             Over 20 major competition victories and counting
           </h2>
 
@@ -48,15 +48,15 @@ const AchievementsSection = () => {
                     className="w-[40px] h-[55px] sm:w-[48px] sm:h-[66px] md:w-[56px] md:h-[77px] object-contain"
                   />
                 </div>
-                <h3 className="text-base sm:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full text-center">
+                <h4 className="card-title text-center">
                   {achievement?.title}
-                </h3>
+                </h4>
               </div>
             ))}
           </div>
 
           {/* Additional Text */}
-          <p className="text-base sm:text-lg font-normal leading-relaxed text-center text-text-primary font-[Inter] mt-[12px] sm:mt-[16px] md:mt-[24px]">
+          <p className="text-body text-center mt-[12px] sm:mt-[16px] md:mt-[24px]">
             and others..
           </p>
         </div>

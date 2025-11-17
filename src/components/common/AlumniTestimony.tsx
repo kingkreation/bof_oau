@@ -93,7 +93,7 @@ const AlumniTestimony: React.FC = () => {
         <div className="flex flex-col items-center gap-8 sm:gap-10 md:gap-[62px] w-full">
           {/* Section heading */}
           <div className="text-center mb-2 sm:mb-3">
-          <h2 className="text-xl sm:text-2xl md:text-3xl text-center text-text-primary w-full max-w-[860px] mt-[8px] sm:mt-[12px] leading-relaxed">
+          <h2 className="section-title w-full max-w-[860px] mt-[8px] sm:mt-[12px]">
               Alumni Testimonials
             </h2>
           </div>
@@ -106,7 +106,7 @@ const AlumniTestimony: React.FC = () => {
                 className="bg-background-main rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col gap-[20px] sm:gap-[25px] md:gap-[30px] items-start h-full"
               >
                 {/* Testimonial quote */}
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed text-text-primary w-full">
+                <p className="text-body w-full">
                   {testimonial.quote}
                 </p>
                 
@@ -119,10 +119,10 @@ const AlumniTestimony: React.FC = () => {
                     loading="lazy"
                   />
                   <div className="flex flex-col gap-1">
-                    <h4 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-text-primary">
+                    <h4 className="text-body-bold text-text-primary">
                       {testimonial.name}
                     </h4>
-                    <p className="text-sm sm:text-base font-normal leading-relaxed text-text-primary">
+                    <p className="text-subtitle text-text-primary">
                       {testimonial.position}, {testimonial.company}
                     </p>
                   </div>

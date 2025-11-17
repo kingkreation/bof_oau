@@ -8,10 +8,10 @@ const ContactSection = () => {
         <div className="flex flex-col justify-start items-center gap-[40px] sm:gap-[60px] md:gap-[80px] w-full">
           {/* Section Header */}
           <div className="flex flex-col justify-start items-center gap-[4px] sm:gap-[6px] md:gap-[8px] text-center">
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-center text-text-primary leading-relaxed">
+            <h2 className="section-title">
               Get in touch
             </h2>
-            <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter] max-w-[600px]">
+            <p className="section-subtitle max-w-[600px]">
               We'd love to hear from you! Reach out with any questions or inquiries.
             </p>
           </div>
@@ -31,30 +31,30 @@ const ContactSection = () => {
             <div className="flex flex-col justify-start items-center gap-[12px] sm:gap-[14px] md:gap-[16px] w-full lg:w-[316px] order-1 lg:order-2">
               {/* Email */}
               <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] md:gap-[10px] w-full">
-                <h3 className="text-base sm:text-lg md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter]">
+                <h4 className="text-center text-text-primary font-[Inter]">
                   Email
-                </h3>
-                <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter]">
+                </h4>
+                <p className="text-body text-center text-text-primary font-[Inter]">
                   bureauoffinance@gmail.com
                 </p>
               </div>
 
               {/* Phone */}
               <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] w-full px-[2px] sm:px-[3px] md:px-[6px]">
-                <h3 className="text-base sm:text-lg md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter]">
+                <h4 className="text-center text-text-primary font-[Inter]">
                   Phone
-                </h3>
-                <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter]">
+                </h4>
+                <p className="text-body text-center text-text-primary font-[Inter]">
                   +234 123 4567
                 </p>
               </div>
 
               {/* Location */}
               <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] md:gap-[10px] w-full">
-                <h3 className="text-base sm:text-lg md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter]">
+                <h4 className="text-center text-text-primary font-[Inter]">
                   Location
-                </h3>
-                <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter]">
+                </h4>
+                <p className="text-body text-center text-text-primary font-[Inter]">
                   Obafemi Awolowo University, Ile-Ife, Nigeria
                 </p>
               </div>

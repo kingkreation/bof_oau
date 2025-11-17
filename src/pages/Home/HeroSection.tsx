@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
           Empowering Future Financial Leaders at OAU
         </h1>
 
-            <p className="w-full max-w-[713px] mx-auto font-normal text-black text-sm sm:text-base text-center tracking-[0] leading-relaxed sm:leading-normal mb-8 sm:mb-10">
+            <p className="w-full max-w-[713px] mx-auto text-body text-center mb-8 sm:mb-10">
           Join BOF OAU, Nigeria&#39;s premier student finance club, where
           passion meets opportunity. Together, we cultivate the next generation
           of financial professionals through innovative training and real-world

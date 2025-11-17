@@ -198,18 +198,19 @@
 }
 
 @layer base {
+  /* Typography Scale with Consistent Hierarchy */
   h1 {
     font-family: 'Inter', sans-serif;
-    font-weight: var(--font-weight-normal);
-    font-size: clamp(24px, 5vw, 48px);
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(28px, 5vw, 48px);
     line-height: 1.2;
     color: var(--text-primary);
   }
 
   h2 {
     font-family: 'Inter', sans-serif;
-    font-weight: var(--font-weight-normal);
-    font-size: clamp(20px, 4vw, 36px);
+    font-weight: var(--font-weight-medium);
+    font-size: clamp(22px, 4vw, 36px);
     line-height: 1.3;
     color: var(--text-primary);
   }
@@ -222,6 +223,30 @@
     color: var(--text-primary);
   }
 
+  h4 {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(16px, 3vw, 20px);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  h5 {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(14px, 2.5vw, 18px);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(12px, 2vw, 16px);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
   p {
     font-family: 'Inter', sans-serif;
     font-size: clamp(14px, 2.5vw, 16px);
@@ -229,22 +254,114 @@
     color: var(--text-primary);
   }
 
-  /* Mobile-specific text adjustments */
+  /* Consistent text utility classes */
+  .text-body {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
+    line-height: 1.6;
+    color: var(--text-primary);
+  }
+
+  .text-body-lg {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(15px, 2.8vw, 18px);
+    line-height: 1.6;
+    color: var(--text-primary);
+  }
+
+  .text-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(13px, 2.2vw, 15px);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  .text-caption {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(11px, 2vw, 13px);
+    line-height: 1.4;
+    color: var(--text-primary);
+  }
+
+  /* Bold text variations with hierarchy */
+  .text-body-bold {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2.5vw, 16px);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.6;
+    color: var(--text-primary);
+  }
+
+  .text-subtitle-bold {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(13px, 2.2vw, 15px);
+    font-weight: var(--font-weight-semibold);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  /* Section headers with consistent styling */
+  .section-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(24px, 4.5vw, 40px);
+    line-height: 1.3;
+    color: var(--text-primary);
+    text-align: center;
+  }
+
+  .section-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-size: clamp(16px, 3vw, 20px);
+    line-height: 1.6;
+    color: var(--text-primary);
+    text-align: center;
+  }
+
+  .card-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-semibold);
+    font-size: clamp(16px, 3.2vw, 20px);
+    line-height: 1.4;
+    color: var(--text-primary);
+  }
+
+  .card-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-medium);
+    font-size: clamp(14px, 2.6vw, 16px);
+    line-height: 1.5;
+    color: var(--text-primary);
+  }
+
+  /* Mobile-specific optimizations */
   @media (max-width: 640px) {
     h1 {
       line-height: 1.3;
+      font-weight: var(--font-weight-semibold);
     }
     
     h2 {
       line-height: 1.4;
+      font-weight: var(--font-weight-medium);
     }
     
     h3 {
       line-height: 1.5;
+      font-weight: var(--font-weight-medium);
     }
-    
+
+    h4 {
+      line-height: 1.5;
+    }
+
     p {
       line-height: 1.7;
+    }
+
+    .section-title {
+      line-height: 1.4;
     }
   }
 }
