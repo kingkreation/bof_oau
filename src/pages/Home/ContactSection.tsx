@@ -21,7 +21,7 @@ const ContactSection = () => {
             {/* Contact Image */}
             <div className="w-full lg:w-[740px] order-2 lg:order-1">
               <img 
-                src="/images/img_rectangle_6.png" 
+                src="/images/img_rectangle_6.jpg" 
                 alt="Contact BOF OAU" 
                 className="w-full h-[250px] sm:h-[300px] md:h-[366px] object-cover rounded-sm"
               />
