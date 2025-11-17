@@ -88,25 +88,25 @@ const AlumniTestimony: React.FC = () => {
   ];
 
   return (
-    <section className="w-full bg-primary-medium rounded-sm py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-[52px] py-[52px]">
-        <div className="flex flex-col items-center gap-10 md:gap-[62px] w-full">
+    <section className="w-full bg-primary-medium rounded-sm py-8 sm:py-10 md:py-12 lg:py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-[52px] py-[32px] sm:py-[40px] md:py-[52px]">
+        <div className="flex flex-col items-center gap-8 sm:gap-10 md:gap-[62px] w-full">
           {/* Section heading */}
-          <div className="text-center mb-3">
-          <h2 className="text-center text-text-primary w-full max-w-[860px] mt-[12px]">
+          <div className="text-center mb-2 sm:mb-3">
+          <h2 className="text-xl sm:text-2xl md:text-3xl text-center text-text-primary w-full max-w-[860px] mt-[8px] sm:mt-[12px] leading-relaxed">
               Alumni Testimonials
             </h2>
           </div>
 
           {/* Testimonials grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 w-full">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8 w-full">
             {testimonials.map((testimonial) => (
               <div 
                 key={testimonial.id}
-                className="bg-background-main rounded-lg shadow-sm p-5 sm:p-6 flex flex-col gap-[30px] items-start h-full"
+                className="bg-background-main rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col gap-[20px] sm:gap-[25px] md:gap-[30px] items-start h-full"
               >
                 {/* Testimonial quote */}
-                <p className="text-lg sm:text-xl md:text-[24px] font-normal leading-medium text-text-primary w-full">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-normal leading-relaxed text-text-primary w-full">
                   {testimonial.quote}
                 </p>
                 
@@ -115,14 +115,14 @@ const AlumniTestimony: React.FC = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-[86px] h-[92px] rounded-md object-cover mr-4"
+                    className="w-[60px] h-[65px] sm:w-[70px] sm:h-[75px] md:w-[86px] md:h-[92px] rounded-md object-cover mr-3 sm:mr-4"
                     loading="lazy"
                   />
                   <div className="flex flex-col gap-1">
-                    <h4 className="text-lg sm:text-xl md:text-[24px] font-semibold leading-relaxed text-text-primary">
+                    <h4 className="text-base sm:text-lg md:text-xl font-semibold leading-relaxed text-text-primary">
                       {testimonial.name}
                     </h4>
-                    <p className="text-base font-normal leading-tight text-text-primary">
+                    <p className="text-sm sm:text-base font-normal leading-relaxed text-text-primary">
                       {testimonial.position}, {testimonial.company}
                     </p>
                   </div>

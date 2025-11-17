@@ -30,7 +30,7 @@ const AchievementsSection = () => {
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full">
           {/* Section Title */}
-          <h2 className="font-normal text-center text-text-primary">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-normal text-center text-text-primary leading-relaxed">
             Over 20 major competition victories and counting
           </h2>
 
@@ -39,16 +39,16 @@ const AchievementsSection = () => {
             {achievements?.map((achievement) => (
               <div 
                 key={achievement?.id}
-                className="flex flex-col justify-start items-start gap-[20px] sm:gap-[30px] w-full sm:w-[346px] h-auto bg-primary-medium rounded-sm p-[40px] sm:p-[60px] md:p-[80px_32px_80px_32px]"
+                className="flex flex-col justify-start items-start gap-[16px] sm:gap-[20px] md:gap-[30px] w-full sm:w-[346px] h-auto bg-primary-medium rounded-sm p-[24px] sm:p-[40px] md:p-[60px_24px_60px_24px]"
               >
                 <div className="flex justify-center items-center w-full">
                   <img 
                     src={achievement?.icon} 
                     alt={achievement?.title}
-                    className="w-[48px] h-[66px] sm:w-[56px] sm:h-[77px] md:w-[64px] md:h-[88px] object-contain"
+                    className="w-[40px] h-[55px] sm:w-[48px] sm:h-[66px] md:w-[56px] md:h-[77px] object-contain"
                   />
                 </div>
-                <h3 className="text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full text-center">
+                <h3 className="text-base sm:text-lg font-normal leading-relaxed text-left text-text-primary font-[Inter] w-full text-center">
                   {achievement?.title}
                 </h3>
               </div>
@@ -56,7 +56,7 @@ const AchievementsSection = () => {
           </div>
 
           {/* Additional Text */}
-          <p className="text-lg font-normal leading-relaxed text-center text-text-primary font-[Inter] mt-[16px] sm:mt-[24px]">
+          <p className="text-base sm:text-lg font-normal leading-relaxed text-center text-text-primary font-[Inter] mt-[12px] sm:mt-[16px] md:mt-[24px]">
             and others..
           </p>
         </div>

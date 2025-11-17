@@ -15,22 +15,22 @@ const FooterSection = () => {
             />
 
             {/* Navigation Links */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-[16px] sm:gap-[20px] md:gap-[30px]">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-[12px] sm:gap-[16px] md:gap-[20px]">
               <a 
                 href="/about" 
-                className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+                className="text-base sm:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 About Us
               </a>
               <a 
                 href="/mission" 
-                className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+                className="text-base sm:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 Mission
               </a>
               <a 
                 href="/structure" 
-                className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+                className="text-base sm:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
               >
                 Our Structure
               </a>
@@ -38,25 +38,25 @@ const FooterSection = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-[12px] sm:gap-[20px] md:gap-[32px] w-full">
-            <p className="text-base font-normal leading-normal text-center text-text-primary font-[Inter]">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-[8px] sm:gap-[12px] md:gap-[16px] w-full">
+            <p className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter]">
               © 2025 BOF OAU. All rights reserved.
             </p>
             <a 
               href="#privacy" 
-              className="text-base font-normal leading-normal text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+              className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
             >
               Privacy Policy
             </a>
             <a 
               href="#terms" 
-              className="text-base font-normal leading-normal text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+              className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
             >
               Terms of Use
             </a>
             <a 
               href="#cookies" 
-              className="text-base font-normal leading-normal text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+              className="text-sm sm:text-base font-normal leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
             >
               Cookie Policy
             </a>
