@@ -52,7 +52,7 @@ const ContactSection = () => {
               
               {/* Spotify Section */}
               <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] w-full px-[2px] sm:px-[3px] md:px-[6px]">
-                <h4 className="text-center text-text-primary font-[Inter]">
+                <h4 className="text-flex text-text-primary font-[Inter]">
                   Join BOF Market Pulse on Spotify
                 </h4>
                 <a href="https://open.spotify.com/show/5YHUK9vFxslbFGtnfzql8I?si=3pk2Gy7mSc-EDGLlUBly_w" target="_blank" rel="noopener noreferrer">
