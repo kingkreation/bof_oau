@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa'; //
+import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { SiSpotify } from 'react-icons/si'; // Added import for Spotify icon
 
 const ContactSection = () => {
   return (
@@ -39,16 +40,6 @@ const ContactSection = () => {
                 </p>
               </div>
 
-              {/* Phone */}
-              <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] w-full px-[2px] sm:px-[3px] md:px-[6px]">
-                <h4 className="text-center text-text-primary font-[Inter]">
-                  Phone
-                </h4>
-                <p className="text-body text-center text-text-primary font-[Inter]">
-                  +234 123 4567
-                </p>
-              </div>
-
               {/* Location */}
               <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] md:gap-[10px] w-full">
                 <h4 className="text-center text-text-primary font-[Inter]">
@@ -57,6 +48,16 @@ const ContactSection = () => {
                 <p className="text-body text-center text-text-primary font-[Inter]">
                   Obafemi Awolowo University, Ile-Ife, Nigeria
                 </p>
+              </div>
+              
+              {/* Spotify Section */}
+              <div className="flex flex-col justify-start items-start gap-[6px] sm:gap-[8px] w-full px-[2px] sm:px-[3px] md:px-[6px]">
+                <h4 className="text-center text-text-primary font-[Inter]">
+                  Join BOF Market Pulse on Spotify
+                </h4>
+                <a href="https://open.spotify.com/show/5YHUK9vFxslbFGtnfzql8I?si=3pk2Gy7mSc-EDGLlUBly_w" target="_blank" rel="noopener noreferrer">
+                  <SiSpotify className="text-text-primary hover:text-gray-500" size={24} />
+                </a>
               </div>
 
               {/* Social Media Links */}
