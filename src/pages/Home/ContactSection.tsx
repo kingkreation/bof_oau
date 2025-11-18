@@ -35,7 +35,7 @@ const ContactSection = () => {
                 <h4 className="text-center text-text-primary font-[Inter]">
                   Email
                 </h4>
-                <p className="text-body text-center text-text-primary font-[Inter]">
+                <p className="text-body text-flex text-text-primary font-[Inter]">
                   bureauoffinance@gmail.com
                 </p>
               </div>
@@ -45,7 +45,7 @@ const ContactSection = () => {
                 <h4 className="text-center text-text-primary font-[Inter]">
                   Location
                 </h4>
-                <p className="text-body text-center text-text-primary font-[Inter]">
+                <p className="text-body text-flex text-text-primary font-[Inter]">
                   Obafemi Awolowo University, Ile-Ife, Nigeria
                 </p>
               </div>
