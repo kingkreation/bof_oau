@@ -72,8 +72,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 </div>
 
                 <div className="text-left leading-tight">
-                  <div className="text-caption sm:text-subtitle font-semibold text-black">The Students' Professional</div>
-                  <div className="text-caption sm:text-subtitle font-semibold text-black">Bureau of Finance, OAU</div>
+                  <div className="text-caption sm:text-subtitle font-bold text-black">The Students' Professional</div>
+                  <div className="text-caption sm:text-subtitle font-bold text-black">Bureau of Finance, OAU</div>
                 </div>
               </div>
             </Link>

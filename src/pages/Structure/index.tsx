@@ -132,7 +132,7 @@ const Structure = () => {
         {/* Subsidiaries */}
         <section className="py-16 bg-green-50">
           <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-center">Internal Subsidiaries</h2>
+            <h2 className="text-center font-bold">Internal Subsidiaries</h2>
             <p className="text-center text-gray-700 mt-3">BOF OAU transcends traditional classroom learning through our student-led subsidiaries - innovative structures that provide analysts with unparalleled hands-on experience in three critical areas of modern finance.</p>
 
             <div className="mt-8 space-y-6">
