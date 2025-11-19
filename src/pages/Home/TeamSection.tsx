@@ -155,7 +155,7 @@ const TeamSection = () => {
                 member={{
                   id: "13",
                   name: "Faith Adeniji",
-                 . position: "Head, Program & Event",
+                  position: "Head, Program & Event",
                   image: "/images/img_ellipse_4_1.jpg",
                   imageWidth: "86px",
                   imageHeight: "92px"
