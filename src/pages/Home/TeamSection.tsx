@@ -15,25 +15,25 @@ const TeamSection = () => {
       id: "1",
       name: "Esther Mac-Sanddy",
       position: "CEO (President)",
-      image: "/images/img_ellipse_1.png"
+      image: "/images/img_ellipse_1.jpg"
     },
     {
       id: "2", 
       name: "Adurasanmi David",
       position: "Vice President (Research)",
-      image: "/images/img_ellipse_2.png"
+      image: "/images/img_ellipse_2.jpg"
     },
     {
       id: "3",
       name: "Deborah Okesanjo", 
       position: "Vice President (Operations)",
-      image: "/images/img_ellipse_3.png"
+      image: "/images/img_ellipse_3.jpg"
     },
     {
       id: "4",
       name: "Abdulquadri Fasasi",
       position: "Head, Corporate Strategy & Branding",
-      image: "/images/img_ellipse_4.png"
+      image: "/images/img_ellipse_4.jpg"
     }
   ];
 
@@ -42,25 +42,25 @@ const TeamSection = () => {
       id: "5",
       name: "Favour Abanum",
       position: "Head, Financial Technology", 
-      image: "/images/img_ellipse_1_108x108.png"
+      image: "/images/img_ellipse_1_108x108.jpg"
     },
     {
       id: "6",
       name: "Adekunle Okunniyi",
       position: "Head, Investment Banking & Alternative Investments",
-      image: "/images/img_ellipse_2_108x108.png"
+      image: "/images/img_ellipse_2_108x108.jpg"
     },
     {
       id: "7",
       name: "Eniola Oyebode",
       position: "Head, Energy & Infrastructure",
-      image: "/images/img_ellipse_3_108x108.png"
+      image: "/images/img_ellipse_3_108x108.jpg"
     },
     {
       id: "8",
       name: "Shukurat Azeez",
       position: "Head, Financial Operations",
-      image: "/images/img_ellipse_4_108x108.png"
+      image: "/images/img_ellipse_4_108x108.jpg"
     }
   ];
 
@@ -69,25 +69,25 @@ const TeamSection = () => {
       id: "9",
       name: "Jumoke Akande",
       position: "Head, Management Consulting",
-      image: "/images/img_ellipse_1_1.png"
+      image: "/images/img_ellipse_1_1.jpg"
     },
     {
       id: "10",
       name: "Enoch Eyiaro",
       position: "Head, Research & Academics",
-      image: "/images/img_ellipse_2_1.png"
+      image: "/images/img_ellipse_2_1.jpg"
     },
     {
       id: "11",
       name: "Simeon Olalude",
       position: "Head, Public Engagements",
-      image: "/images/img_ellipse_3_1.png"
+      image: "/images/img_ellipse_3_1.jpg"
     },
     {
       id: "12",
       name: "Roqeeb Sorunke",
       position: "Head, Sales & Trading",
-      image: "/images/img_ellipse_4_92x86.png",
+      image: "/images/img_ellipse_4_92x86.jpg",
       imageWidth: "86px",
       imageHeight: "92px"
     }
