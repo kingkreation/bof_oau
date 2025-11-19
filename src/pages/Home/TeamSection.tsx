@@ -87,9 +87,7 @@ const TeamSection = () => {
       id: "12",
       name: "Roqeeb Sorunke",
       position: "Head, Sales & Trading",
-      image: "/images/img_ellipse_4_92x86.jpg",
-      imageWidth: "86px",
-      imageHeight: "92px"
+      image: "/images/img_ellipse_4_92x86.jpg"
     }
   ];
 
@@ -157,8 +155,8 @@ const TeamSection = () => {
                 member={{
                   id: "13",
                   name: "Faith Adeniji",
-                  position: "Head, Program & Event",
-                  image: "/images/img_ellipse_4_1.png",
+                 . position: "Head, Program & Event",
+                  image: "/images/img_ellipse_4_1.jpg",
                   imageWidth: "86px",
                   imageHeight: "92px"
                 }} 
