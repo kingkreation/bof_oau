@@ -25,11 +25,11 @@ const Structure = () => {
             style={{ backgroundImage: "url('/images/rec.jpg')" }}
           >
 
-            {/* Large heading: bottom-left overlay (responsive sizing) */}
+            {/* Large heading: top-right overlay (responsive sizing) */}
             <h1
-              className="absolute text-white left-4 sm:left-6 md:left-10 lg:left-12 w-[180px] sm:w-[200px] md:w-[400px] lg:w-[600px]"
+              className="absolute text-black right-4 sm:right-6 md:right-10 lg:right-12 w-[180px] sm:w-[200px] md:w-[400px] lg:w-[600px]"
               style={{
-                bottom: 16,
+                top: 16,
                 fontWeight: 800,
                 fontSize: 'clamp(24px, 5vw, 72px)',
                 lineHeight: '1.1',
