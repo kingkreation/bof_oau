@@ -21,7 +21,7 @@ const Structure = () => {
         {/* Hero */}
 <section className="w-full flex justify-center">
   <div 
-    className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center bg-no-repeat" 
+    className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-contain bg-center bg-no-repeat" 
     style={{ 
       backgroundImage: "url('/images/rec.jpg')",
       backgroundColor: "#f0f0f0" // Fallback color if image fails to load
@@ -45,12 +45,10 @@ const Structure = () => {
           </div>
         </div>
 
-        {/* Large heading: Top-right - flexible width, added background for visibility */}
-        <div className="bg-white bg-opacity-80 rounded-lg p-2 sm:p-4 shadow-lg max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-          <h1 className="text-gray-900 font-bold leading-tight text-center sm:text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}>
-            Built for Excellence
-          </h1>
-        </div>
+        {/* Large heading: Top-right - toned down for less prominence */}
+        <h1 className="text-gray-700 font-semibold leading-tight text-center sm:text-right max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl" style={{ textShadow: "1px 1px 1px rgba(255,255,255,0.8)" }}>
+          Built for Excellence
+        </h1>
       </div>
 
       {/* Bottom section: Stats on right - stacked on mobile for better fit */}
