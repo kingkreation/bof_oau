@@ -22,7 +22,7 @@ const Structure = () => {
         <section className="w-full flex justify-center">
           <div
             className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/rec.png')" }}
+            style={{ backgroundImage: "url('/images/rec.jpg')" }}
           >
 
             {/* Large heading: bottom-left overlay (responsive sizing) */}
