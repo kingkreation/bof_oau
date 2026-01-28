@@ -26,18 +26,9 @@ const Structure = () => {
           >
 
             {/* Large heading: top-right overlay (responsive sizing) */}
-            <h1
-              className="absolute text-black right-4 sm:right-6 md:right-10 lg:right-12 w-[180px] sm:w-[200px] md:w-[400px] lg:w-[600px]"
-              style={{
-                top: 16,
-                fontWeight: 800,
-                fontSize: 'clamp(24px, 5vw, 72px)',
-                lineHeight: '1.1',
-                margin: 0,
-              }}
-            >
-              Built for Excellence
-            </h1>
+            <h1 className="text-black font-bold leading-tight text-right w-[180px] sm:w-[250px] md:w-[400px] lg:w-[500px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          Built for Excellence
+        </h1>
 
             {/* Stats: top-left group - slightly escaping image */}
             <div className="absolute left-[8px] sm:left-[10px] md:left-[40px] top-[-20px] sm:top-[-28px]">
