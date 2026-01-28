@@ -19,56 +19,58 @@ const Structure = () => {
         <Header />
 
         {/* Hero */}
-<section className="w-full flex justify-center">
-  <div
-    className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-contain bg-center md:bg-cover lg:bg-cover"
-    style={{ backgroundImage: "url('/images/rec.jpg')" }}
-  >
-    {/* Large heading: top-right overlay (responsive sizing) */}
-    <h1
-      className="absolute text-black right-4 sm:right-6 md:right-10 lg:right-12 w-[180px] sm:w-[200px] md:w-[400px] lg:w-[600px]"
-      style={{
-        top: 16,
-        fontWeight: 800,
-        fontSize: 'clamp(24px, 5vw, 72px)',
-        lineHeight: '1.1',
-        margin: 0,
-      }}
-    >
-      Built for Excellence
-    </h1>
+        <section className="w-full flex justify-center">
+          <div
+            className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center"
+            style={{ backgroundImage: "url('/images/rec.jpg')" }}
+          >
 
-    {/* Stats: top-left group - slightly escaping image (half on, half off) */}
-    <div className="absolute left-[8px] sm:left-[10px] md:left-[40px] top-[-24px] sm:top-[-32px] md:top-[-48px]">
-      <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-        <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
-        <div className="text-[10px] sm:text-xs md:text-sm font-bold">Core Divisions</div>
-      </div>
-    </div>
+            {/* Large heading: top-right overlay (responsive sizing) */}
+            <h1
+              className="absolute text-black right-4 sm:right-6 md:right-10 lg:right-12 w-[180px] sm:w-[200px] md:w-[400px] lg:w-[600px]"
+              style={{
+                top: 16,
+                fontWeight: 800,
+                fontSize: 'clamp(24px, 5vw, 72px)',
+                lineHeight: '1.1',
+                margin: 0,
+              }}
+            >
+              Built for Excellence
+            </h1>
 
-    <div className="absolute left-[110px] sm:left-[140px] md:left-[290px] top-[-24px] sm:top-[-32px] md:top-[-48px]">
-      <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-        <div className="text-xs sm:text-sm md:text-lg font-bold">15+</div>
-        <div className="text-[10px] sm:text-xs md:text-sm font-bold">Specialized Teams</div>
-      </div>
-    </div>
+            {/* Stats: top-left group - slightly escaping image */}
+            <div className="absolute left-[8px] sm:left-[10px] md:left-[40px] top-[-20px] sm:top-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
+                <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold">Core Divisions</div>
+              </div>
+            </div>
 
-    {/* Stats: bottom-right group - slightly escaping image (half on, half off) */}
-    <div className="absolute right-[110px] sm:right-[140px] md:right-[320px] bottom-[-24px] sm:bottom-[-32px] md:bottom-[-48px]">
-      <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-        <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
-        <div className="text-[10px] sm:text-xs md:text-sm font-bold">Live Subsidiaries</div>
-      </div>
-    </div>
+            <div className="absolute left-[110px] sm:left-[140px] md:left-[290px] top-[-20px] sm:top-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
+                <div className="text-xs sm:text-sm md:text-lg font-bold">15+</div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold">Specialized Teams</div>
+              </div>
+            </div>
 
-    <div className="absolute right-[8px] sm:right-[10px] md:right-[100px] bottom-[-24px] sm:bottom-[-32px] md:bottom-[-48px]">
-      <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-        <div className="text-xs sm:text-sm md:text-lg font-bold">500+</div>
-        <div className="text-[10px] sm:text-xs md:text-sm font-bold">Active Members</div>
-      </div>
-    </div>
-  </div>
-</section>
+            {/* Stats: bottom-right group - slightly outside image */}
+            <div className="absolute right-[110px] sm:right-[140px] md:right-[320px] bottom-[-20px] sm:bottom-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
+                <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold">Live Subsidiaries</div>
+              </div>
+            </div>
+
+            <div className="absolute right-[8px] sm:right-[10px] md:right-[100px] bottom-[-20px] sm:bottom-[-28px]">
+              <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
+                <div className="text-xs sm:text-sm md:text-lg font-bold">500+</div>
+                <div className="text-[10px] sm:text-xs md:text-sm font-bold">Active Members</div>
+              </div>
+            </div>
+
+          </div>
+        </section>
 
         {/* Intro */}
         <section className="py-8 sm:py-12">
