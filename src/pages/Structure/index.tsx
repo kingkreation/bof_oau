@@ -20,39 +20,49 @@ const Structure = () => {
 
         {/* Hero */}
 <section className="w-full flex justify-center">
-  <div className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center md:bg-cover lg:bg-cover" style={{ backgroundImage: "url('/images/rec.jpg')" }}>
+  <div 
+    className="relative w-full max-w-[1200px] h-[420px] md:h-[560px] lg:h-[640px] bg-cover bg-center bg-no-repeat" 
+    style={{ 
+      backgroundImage: "url('/images/rec.jpg')",
+      backgroundColor: "#f0f0f0" // Fallback color if image fails to load
+    }}
+    role="img" 
+    aria-label="Hero background image" // Accessibility for screen readers
+  >
     {/* Container for better organization and responsiveness */}
     <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 md:p-8 lg:p-10">
       {/* Top section: Stats on left, H1 on right */}
-      <div className="flex justify-between items-start">
-        {/* Stats: Top-left group - adjusted for better spacing and no overlap */}
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+        {/* Stats: Top-left group - flexible sizing to prevent overlap */}
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-          <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-            <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
-            <div className="text-[10px] sm:text-xs md:text-sm font-bold">Core Divisions</div>
+          <div className="bg-white text-gray-800 shadow-lg rounded flex flex-col items-center justify-center w-20 sm:w-24 md:w-32 h-12 sm:h-16 md:h-20 p-2 sm:p-3 border border-gray-200">
+            <div className="text-xs sm:text-sm md:text-base font-bold">03</div>
+            <div className="text-[10px] sm:text-xs md:text-sm font-medium">Core Divisions</div>
           </div>
-          <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-            <div className="text-xs sm:text-sm md:text-lg font-bold">15+</div>
-            <div className="text-[10px] sm:text-xs md:text-sm font-bold">Specialized Teams</div>
+          <div className="bg-white text-gray-800 shadow-lg rounded flex flex-col items-center justify-center w-20 sm:w-24 md:w-32 h-12 sm:h-16 md:h-20 p-2 sm:p-3 border border-gray-200">
+            <div className="text-xs sm:text-sm md:text-base font-bold">15+</div>
+            <div className="text-[10px] sm:text-xs md:text-sm font-medium">Specialized Teams</div>
           </div>
         </div>
 
-        {/* Large heading: Top-right - improved positioning and responsiveness */}
-        <h1 className="text-black font-bold leading-tight text-right w-[180px] sm:w-[250px] md:w-[400px] lg:w-[500px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-          Built for Excellence
-        </h1>
+        {/* Large heading: Top-right - flexible width, added background for visibility */}
+        <div className="bg-white bg-opacity-80 rounded-lg p-2 sm:p-4 shadow-lg max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <h1 className="text-gray-900 font-bold leading-tight text-center sm:text-right text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl" style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.5)" }}>
+            Built for Excellence
+          </h1>
+        </div>
       </div>
 
-      {/* Bottom section: Stats on right */}
+      {/* Bottom section: Stats on right - stacked on mobile for better fit */}
       <div className="flex justify-end">
         <div className="flex flex-col sm:flex-row gap-2 sm:gap-4">
-          <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-            <div className="text-xs sm:text-sm md:text-lg font-bold">03</div>
-            <div className="text-[10px] sm:text-xs md:text-sm font-bold">Live Subsidiaries</div>
+          <div className="bg-white text-gray-800 shadow-lg rounded flex flex-col items-center justify-center w-20 sm:w-24 md:w-32 h-12 sm:h-16 md:h-20 p-2 sm:p-3 border border-gray-200">
+            <div className="text-xs sm:text-sm md:text-base font-bold">03</div>
+            <div className="text-[10px] sm:text-xs md:text-sm font-medium">Live Subsidiaries</div>
           </div>
-          <div className="bg-white text-gray-800 shadow rounded flex flex-col items-center justify-center w-[90px] sm:w-[120px] md:w-[181px] h-[48px] sm:h-[64px] md:h-[96px] p-2 sm:p-3 border border-gray-200 border-opacity-10">
-            <div className="text-xs sm:text-sm md:text-lg font-bold">500+</div>
-            <div className="text-[10px] sm:text-xs md:text-sm font-bold">Active Members</div>
+          <div className="bg-white text-gray-800 shadow-lg rounded flex flex-col items-center justify-center w-20 sm:w-24 md:w-32 h-12 sm:h-16 md:h-20 p-2 sm:p-3 border border-gray-200">
+            <div className="text-xs sm:text-sm md:text-base font-bold">500+</div>
+            <div className="text-[10px] sm:text-xs md:text-sm font-medium">Active Members</div>
           </div>
         </div>
       </div>
