@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
+import { useLocation } from 'react-router-dom';
 
 const APPLICATION_URL = 'https://forms.gle/fDiLo3HFRZCsNpYz6';
 
@@ -15,6 +16,8 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
+  const location = useLocation();
+  const homeHref = location.pathname === '/' ? '#hero' : '/';
 
   useEffect(() => {
     const updateHeader = () => setScrolled(window.scrollY > 24);
@@ -67,7 +70,7 @@ const Header: React.FC = () => {
   return (
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <div className="shell site-header__inner">
-        <a className="brand-lockup" href="#hero" onClick={closeMenu} aria-label="BOF OAU home">
+        <a className="brand-lockup" href={homeHref} onClick={closeMenu} aria-label="BOF OAU home">
           <img src="/images/img_d64c46b0a850558.png" alt="BOF OAU logo" width="48" height="48" />
           <span>
             <strong>BOF OAU</strong>
@@ -82,7 +85,7 @@ const Header: React.FC = () => {
               <a
                 key={item.href}
                 className={activeSection === section ? 'is-active' : ''}
-                href={item.href}
+                href={location.pathname === '/' ? item.href : '/' + item.href}
               >
                 {item.label}
               </a>
@@ -150,7 +153,7 @@ const Header: React.FC = () => {
                     <a
                       key={item.href}
                       className={activeSection === section ? 'is-active' : ''}
-                      href={item.href}
+                      href={location.pathname === '/' ? item.href : '/' + item.href}
                       onClick={closeMenu}
                     >
                       <span>0{index + 1}</span>
