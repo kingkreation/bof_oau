@@ -2,6 +2,18 @@
 
 A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
 
+## BOF OAU design system
+
+The landing page uses the existing BOF green identity and a restrained finance-editorial visual language:
+
+- `--brand-primary: #00713A` — actions, active states, and key highlights
+- `--brand-secondary: #073B28` — deep green surfaces and footer
+- `--brand-accent: #B7E6CA` — restrained stat and hover accent
+- `--bg: #F6FAF7` / `--bg-dark: #05281A` — light and dark section rhythm
+- `--text: #0B1712` / `--text-muted: #607066` — readable hierarchy
+
+The page is organized into `Header`, `Hero`, `About`, `Evolution`, `VisionMission`, `Achievements`, `Team`, `Faculty`, `FAQ`, `Events`, `JoinCta`, `Contact`, and `Footer` components. Replace content and images in the matching files under `src/pages/Home`; static images live in `public/images`.
+
 ## 🚀 Features
 
 - **React 18** - React version with improved rendering and concurrent features
