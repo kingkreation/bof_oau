@@ -1,66 +1,65 @@
 import React from 'react';
+import { ArrowUpRight, GraduationCap } from 'lucide-react';
+import { motion } from 'framer-motion';
+import Reveal from '../../components/home/Reveal';
+import SectionHeading from '../../components/home/SectionHeading';
 
-interface FacultyMember {
-  id: string;
-  name: string;
-  position: string;
-  image: string;
-}
+const advisers = [
+  {
+    name: 'Prof. R.O. Salawu',
+    role: 'Strategic Development & Industry Partnerships',
+    image: '/images/img_ellipse_2_2.png',
+  },
+  {
+    name: 'Dr. J. Monday',
+    role: 'Student Development & Curriculum Alignment',
+    image: '/images/img_ellipse_2_3.png',
+  },
+  {
+    name: 'Dr. Q.A. Lawal',
+    role: 'Financial Research & Innovation',
+    image: '/images/img_ellipse_2_4.png',
+  },
+];
 
-const FacultySection = () => {
-  const facultyMembers: FacultyMember[] = [
-    {
-      id: "1",
-      name: "Prof. R.O. Salawu",
-      position: "Strategic Development & Industry Partnerships",
-      image: "/images/img_ellipse_2_2.png"
-    },
-    {
-      id: "2",
-      name: "Dr. J. Monday",
-      position: "Student Development & Curriculum Alignment", 
-      image: "/images/img_ellipse_2_3.png"
-    },
-    {
-      id: "3",
-      name: "Dr. Q.A. Lawal",
-      position: "Financial Research & Innovation",
-      image: "/images/img_ellipse_2_4.png"
-    }
-  ];
-
+const FacultySection: React.FC = () => {
   return (
-    <section className="w-full bg-background-main py-[32px] sm:py-[40px] md:py-[46px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center gap-[32px] sm:gap-[40px] md:gap-[48px] w-full">
-          {/* Section Title */}
-          <h2 className="font-medium text-center text-text-primary">
-            Our Faculty Advisers
-          </h2>
-
-          {/* Faculty Grid */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-[40px] sm:gap-[80px] md:gap-[116px] w-full max-w-[950px] px-[21px] sm:px-[30px] md:px-[42px]">
-            {facultyMembers.map((member) => (
-              <div 
-                key={member.id}
-                className="flex flex-col justify-start items-center gap-[8px] sm:gap-[12px] w-full sm:w-[186px]"
+    <section id="advisers" className="section section--light">
+      <div className="shell">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Guided by experience"
+            title="Faculty advisers."
+            description="A quiet layer of support from people who understand both the institution and the industry."
+            align="center"
+          />
+        </Reveal>
+        <div className="adviser-grid">
+          {advisers.map((adviser, index) => (
+            <Reveal key={adviser.name} delay={index * 0.08}>
+              <motion.article
+                className="adviser-card"
+                whileHover={{ y: -4 }}
+                transition={{ duration: 0.2 }}
               >
-                <img 
-                  src={member.image} 
-                  alt={member.name}
-                  className="w-[80px] h-[80px] sm:w-[90px] sm:h-[90px] md:w-[108px] md:h-[108px] object-cover rounded-lg"
-                />
-                <div className="flex flex-col justify-start items-center gap-[4px] sm:gap-[6px] text-center">
-                  <h3 className="text-lg sm:text-xl md:text-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter]">
-                    {member.name}
-                  </h3>
-                  <p className="text-sm sm:text-base font-normal leading-tight text-center text-text-primary font-[Inter] w-full">
-                    {member.position}
-                  </p>
+                <div className="adviser-card__top">
+                  <span className="adviser-tag">
+                    <GraduationCap size={14} aria-hidden="true" /> Faculty Adviser
+                  </span>
+                  <ArrowUpRight size={18} aria-hidden="true" />
                 </div>
-              </div>
-            ))}
-          </div>
+                <img
+                  src={adviser.image}
+                  alt={adviser.name}
+                  width="180"
+                  height="180"
+                  loading="lazy"
+                />
+                <h3>{adviser.name}</h3>
+                <p>{adviser.role}</p>
+              </motion.article>
+            </Reveal>
+          ))}
         </div>
       </div>
     </section>

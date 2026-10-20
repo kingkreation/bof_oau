@@ -1,47 +1,125 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from '../../components/ui/Button';
+import { ArrowDown, ArrowRight, BarChart3, Trophy, Users } from 'lucide-react';
+import { motion } from 'framer-motion';
+import Reveal from '../../components/home/Reveal';
+
+const APPLICATION_URL = 'https://forms.gle/fDiLo3HFRZCsNpYz6';
 
 const HeroSection: React.FC = () => {
-  const navigate = useNavigate();
-  
-  // updated to point to external Medium page
-  const handleBecomeAnalyst = () => {
-    window.location.href = 'https://forms.gle/fDiLo3HFRZCsNpYz6';
-  };
-  
   return (
-    <section className="w-full bg-background-main pt-6 sm:pt-8 md:pt-12 lg:pt-16">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center w-full gap-[24px] sm:gap-[32px] md:gap-[40px] lg:gap-[52px]">
-          {/* Hero Content */}
-          <div className="flex flex-col justify-start items-center w-full max-w-[892px]">
-            {/* Main Heading */}
-            <h1 className="w-full max-w-[892px] mx-auto text-center text-text-primary mb-6 sm:mb-8">
-          Empowering Future Financial Leaders at OAU
-        </h1>
+    <section id="hero" className="hero-section">
+      <div className="hero-section__grid" aria-hidden="true" />
+      <div className="shell hero-section__inner">
+        <div className="hero-copy">
+          <Reveal>
+            <span className="eyebrow eyebrow--dark">
+              Nigeria&apos;s first student-led finance club · Since 2011
+            </span>
+          </Reveal>
+          <Reveal delay={0.05}>
+            <h1>
+              Empowering <span>Future Financial Leaders</span> at OAU
+            </h1>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="hero-lede">
+              Join BOF OAU, Nigeria&apos;s premier student finance club, where passion meets
+              opportunity. Together, we cultivate the next generation of financial professionals
+              through innovative training and real-world experiences.
+            </p>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <div className="hero-actions">
+              <a
+                className="button button--light"
+                href={APPLICATION_URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Become an Analyst <ArrowRight size={17} aria-hidden="true" />
+              </a>
+              <a className="text-link text-link--light" href="#about">
+                Learn more <ArrowDown size={16} aria-hidden="true" />
+              </a>
+            </div>
+          </Reveal>
+          <Reveal delay={0.2}>
+            <div className="hero-proof" aria-label="BOF OAU highlights">
+              <div>
+                <strong>500+</strong>
+                <span>engaged members</span>
+              </div>
+              <div>
+                <strong>20+</strong>
+                <span>competition victories</span>
+              </div>
+              <div>
+                <strong>All</strong>
+                <span>faculties welcome</span>
+              </div>
+            </div>
+          </Reveal>
+        </div>
 
-            <p className="w-full max-w-[713px] mx-auto text-body text-center mb-8 sm:mb-10">
-          Join BOF OAU, Nigeria&#39;s premier student finance club, where
-          passion meets opportunity. Together, we cultivate the next generation
-          of financial professionals through innovative training and real-world
-          experiences.
-        </p>
-
-            <div className="mt-6 inline-block">
-              <Button text="Become an Analyst" size="large" variant="outline" onClick={handleBecomeAnalyst} />
+        <Reveal className="hero-visual-wrap" delay={0.12}>
+          <div className="hero-visual">
+            <div className="hero-visual__halo" aria-hidden="true" />
+            <div className="hero-image-frame">
+              <img
+                src="/images/img_rectangle_7.png"
+                alt="BOF OAU students and faculty advisers together"
+                width="900"
+                height="620"
+                fetchPriority="high"
+              />
+              <div className="hero-image-frame__label">
+                <span className="pulse-dot" /> Building what&apos;s next
+              </div>
+            </div>
+            <motion.div
+              className="float-card float-card--members"
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <span className="float-card__icon">
+                <Users size={17} aria-hidden="true" />
+              </span>
+              <span>
+                <strong>500+</strong>
+                <small>members in motion</small>
+              </span>
+            </motion.div>
+            <motion.div
+              className="float-card float-card--wins"
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 5.5, repeat: Infinity, ease: 'easeInOut', delay: 0.4 }}
+            >
+              <span className="float-card__icon float-card__icon--accent">
+                <Trophy size={17} aria-hidden="true" />
+              </span>
+              <span>
+                <strong>20+</strong>
+                <small>competition wins</small>
+              </span>
+            </motion.div>
+            <div className="hero-chart-mark" aria-hidden="true">
+              <BarChart3 size={25} />
             </div>
           </div>
+        </Reveal>
+      </div>
 
-          <div className="w-full max-w-[1185px] mx-auto">
-          <img
-            className="w-full h-auto rounded object-cover"
-            alt="Faculty advisors and students at OAU"
-            src="/images/img_rectangle_7.png" 
-          />
-        </div>
+      <div className="shell trusted-row">
+        <span>Learning beyond the classroom</span>
+        <div className="trusted-chips" aria-label="Finance competition focus areas">
+          <span>CFA Institute Challenges</span>
+          <span>Corporate Strategy</span>
+          <span>FinTech &amp; Innovation</span>
         </div>
       </div>
+      <a className="scroll-cue" href="#about" aria-label="Scroll to learn about BOF OAU">
+        <span /> Scroll to explore
+      </a>
     </section>
   );
 };

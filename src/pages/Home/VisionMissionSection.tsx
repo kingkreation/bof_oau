@@ -1,35 +1,74 @@
 import React from 'react';
+import { Eye, Sparkles, Target } from 'lucide-react';
+import Reveal from '../../components/home/Reveal';
+import SectionHeading from '../../components/home/SectionHeading';
 
-const VisionMissionSection = () => {
+const VisionMissionSection: React.FC = () => {
   return (
-    <section className="w-full bg-primary-medium py-[40px] sm:py-[56px] md:py-[80px]">
-      <div className="w-full max-w-[1440px] mx-auto">
-        <div className="flex flex-col justify-start items-center gap-[48px] sm:gap-[60px] md:gap-[78px] px-4 sm:px-6 lg:px-8">
-          {/* Section Title */}
-          <h2 className="section-title w-full max-w-[860px] mt-[12px]">
-            Our Vision and Mission at BOF OAU
-          </h2>
-
-          {/* Content Row */}
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-[40px] lg:gap-[80px] w-full max-w-[1198px]">
-            {/* Vision & Mission Text */}
-            <div className="w-full lg:w-[456px] mt-0 lg:mt-[112px]">
-              <p className="text-body text-left w-full">
-                <span className="text-body-bold text-primary-background">Vision:</span> To be Africa's leading student-led finance organization, producing world-class financial professionals with technical expertise, innovative thinking, and ethical leadership.
-                <br /><br />
-                <span className="text-body-bold text-primary-background">Mission:</span> Empower students with practical financial skills, industry exposure, and leadership development through cutting-edge training, competitions, and networking opportunities.
-              </p>
+    <section id="mission" className="section section--sage">
+      <div className="shell">
+        <Reveal>
+          <SectionHeading
+            eyebrow="Vision & mission"
+            title="Technical edge. Human impact."
+            description="The ambition is global. The starting point is a student who wants to do meaningful work."
+            align="center"
+          />
+        </Reveal>
+        <div className="vision-layout">
+          <Reveal className="vision-image-card">
+            <img
+              src="/images/vission.JPG"
+              alt="BOF OAU members collaborating during a finance session"
+              width="860"
+              height="600"
+              loading="lazy"
+            />
+            <div className="vision-image-card__overlay">
+              <span>01</span>
+              <p>Learn with people who care about the work.</p>
             </div>
-
-            {/* Image */}
-            <div className="flex justify-center items-center w-full lg:w-[644px] lg:self-center">
-              <img 
-                src="/images/img_rectangle_3.png" 
-                alt="BOF OAU Vision Mission" 
-                className="w-full max-w-[644px] h-[250px] sm:h-[350px] md:h-[482px] object-cover rounded-sm"
-              />
-            </div>
+          </Reveal>
+          <div className="vision-cards">
+            <Reveal delay={0.08}>
+              <article className="vision-card">
+                <div className="vision-card__header">
+                  <span className="vision-card__number">01</span>
+                  <span className="icon-tile">
+                    <Eye size={19} aria-hidden="true" />
+                  </span>
+                </div>
+                <span className="card-eyebrow">Vision</span>
+                <h3>Leading from OAU to Africa.</h3>
+                <p>
+                  To be Africa&apos;s leading student-led finance organization, producing
+                  world-class financial professionals with technical expertise, innovative thinking,
+                  and ethical leadership.
+                </p>
+              </article>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <article className="vision-card vision-card--primary">
+                <div className="vision-card__header">
+                  <span className="vision-card__number">02</span>
+                  <span className="icon-tile">
+                    <Target size={19} aria-hidden="true" />
+                  </span>
+                </div>
+                <span className="card-eyebrow">Mission</span>
+                <h3>Make opportunity practical.</h3>
+                <p>
+                  Empower students with practical financial skills, industry exposure, and
+                  leadership development through cutting-edge training, competitions, and networking
+                  opportunities.
+                </p>
+              </article>
+            </Reveal>
           </div>
+        </div>
+        <div className="mission-note">
+          <Sparkles size={16} aria-hidden="true" />
+          <span>Curiosity is the only prerequisite.</span>
         </div>
       </div>
     </section>
