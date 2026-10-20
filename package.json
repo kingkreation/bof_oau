@@ -31,6 +31,7 @@
       "prettier"
     ],
     "scripts": [
+      "dev",
       "start",
       "build",
       "lint",
@@ -43,8 +44,11 @@
     "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for TypeScript React app functionality"
   },
   "scripts": {
+    "dev": "vite",
     "start": "vite",
-    "build": "tsc --noCheck && vite build",
+    "build": "tsc --noEmit && vite build",
+    "lint": "tsc --noEmit",
+    "lint:fix": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\"",
     "format": "prettier --write \"src/**/*.{ts,tsx,css,md,json}\"",
     "preview": "vite preview",
     "serve": "vite preview",

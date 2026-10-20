@@ -26,6 +26,8 @@ A modern React-based project utilizing the latest frontend technologies and tool
 
 2. Start the server:
   ```bash
+  npm run dev
+  # or
   npm run start
   # or
   yarn start
