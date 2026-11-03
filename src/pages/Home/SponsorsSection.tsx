@@ -5,77 +5,77 @@ import SectionHeading from '../../components/home/SectionHeading';
 const sponsors = [
   {
     name: 'ACCA',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-46-47-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.46.47 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'IOVA Global Learning Solution',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-46-32-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.46.32 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'BetaPlus',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-46-57-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.46.57 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'KaiFinance by Koboaccountant',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-48-51-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.48.51 PM.jpeg',
     treatment: 'sponsor-card--dark',
   },
   {
     name: 'Intelregion',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-48-38-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.48.38 PM.jpeg',
     treatment: 'sponsor-card--green',
   },
   {
     name: 'Consonance',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-51-18-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.51.18 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'Hilaq',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-49-49-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.49.49 PM.jpeg',
     treatment: 'sponsor-card--purple',
   },
   {
     name: 'MA Talent Africa',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-49-41-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.49.41 PM.jpeg',
     treatment: 'sponsor-card--dark',
   },
   {
     name: 'The Afara Initiative',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-49-26-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.49.26 PM.jpeg',
     treatment: 'sponsor-card--blue',
   },
   {
     name: 'SE Africa',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-49-18-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.49.18 PM.jpeg',
     treatment: 'sponsor-card--dark',
   },
   {
     name: 'OuiCapital',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-49-07-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.49.07 PM.jpeg',
     treatment: 'sponsor-card--dark',
   },
   {
     name: 'Eliad Investments & Securities',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-47-36-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.47.36 PM.jpeg',
     treatment: 'sponsor-card--dark',
   },
   {
     name: 'Bureau of Finance Alumni Body',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-47-26-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.47.26 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'Dash Microfinance Bank',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-20-at-6-47-06-pm.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-20 at 6.47.06 PM.jpeg',
     treatment: 'sponsor-card--light',
   },
   {
     name: 'Apex',
-    image: '/images/sponsors/cleaned/whatsapp-image-2026-10-29-at-4-46-19-pm-1.png',
+    image: '/images/sponsors/cleaned/WhatsApp Image 2026-10-29 at 4.46.19 PM (1).jpeg',
     treatment: 'sponsor-card--light',
   },
 ];

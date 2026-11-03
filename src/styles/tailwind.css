@@ -2011,9 +2011,6 @@
   height: 82px;
   object-fit: contain;
 }
-.sponsor-card--light .sponsor-card__logo {
-  mix-blend-mode: multiply;
-}
 .sponsor-card--dark,
 .sponsor-card--blue,
 .sponsor-card--green,
