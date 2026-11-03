@@ -10,6 +10,7 @@ import TeamSection from './TeamSection';
 import FacultySection from './FacultySection';
 import FAQSection from './FAQSection';
 import EventsSection from './EventsSection';
+import SponsorsSection from './SponsorsSection';
 import JoinCtaSection from './JoinCtaSection';
 import ContactSection from './ContactSection';
 import FooterSection from './FooterSection';
@@ -43,6 +44,7 @@ const Home: React.FC = () => {
         <FacultySection />
         <FAQSection />
         <EventsSection />
+        <SponsorsSection />
         <JoinCtaSection />
         <ContactSection />
       </main>

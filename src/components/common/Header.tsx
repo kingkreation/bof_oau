@@ -9,6 +9,7 @@ const navItems = [
   { label: 'About us', href: '#about' },
   { label: 'Our Mission', href: '#mission' },
   { label: 'Our Structure', href: '#team' },
+  { label: 'Sponsors', href: '#sponsors' },
   { label: 'Join Us', href: '#join' },
 ];
 
@@ -34,6 +35,7 @@ const Header: React.FC = () => {
       'advisers',
       'faq',
       'events',
+      'sponsors',
       'join',
       'contact',
     ];
