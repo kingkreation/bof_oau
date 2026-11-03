@@ -1,70 +1,101 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { ChevronDown, Mail, Plus } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import Reveal from '../../components/home/Reveal';
+import SectionHeading from '../../components/home/SectionHeading';
 
-interface FAQItem {
-  id: string;
-  question: string;
-  answer: string;
-}
+const questions = [
+  {
+    question: 'What is BOF?',
+    answer:
+      "BOF is Nigeria's first student-led finance organisation at OAU, founded in 2011 and focused on practical finance skills, not just theory.",
+  },
+  {
+    question: 'How to become a member?',
+    answer:
+      'To become a member, you must be an OAU student with a passion for finance. Fill out the application form available through our Become an Analyst links. Our team will review your application and get back to you.',
+  },
+  {
+    question: 'What training programs are available?',
+    answer:
+      'We offer workshops on investment research, financial modelling, corporate strategy, financial technology, and industry-specific seminars. Members also gain access to mentorship and practice-led projects.',
+  },
+  {
+    question: 'What are your achievements?',
+    answer:
+      'BOF OAU has celebrated over 20 major competition victories and consistent top-three finishes in global finance competitions, including the CFA Research Challenge.',
+  },
+  {
+    question: 'What are the benefits?',
+    answer:
+      'Members get access to workshops, competitions, networking events, leadership opportunities, practical projects, and a community of ambitious people.',
+  },
+];
 
-const FAQSection = () => {
-  const faqItems: FAQItem[] = [
-    {
-      id: "1",
-      question: "What is BOF?",
-      answer: "Nigeria's first student-led finance organisation at OAU founded in 2011, focused on practical finance skills, not just theory."
-    },
-    {
-      id: "2", 
-      question: "How to become a member?",
-      answer: "To become a member, you must be a student at OAU with a passion for finance. Simply fill out the application form available on our website. Once submitted, our team will review your application and get back to you.on questions asked."
-    },
-    {
-      id: "3",
-      question: "What training programs are available?",
-      answer: "We offer a variety of training programs designed to enhance your financial skills. These include workshops on investment strategies, financial modeling, and industry-specific seminars. Participants also gain access to mentorship opportunities with industry professionals."
-    },
-    {
-      id: "4",
-      question: "What are your achievement?",
-      answer: "Consistent top-three finishes in global finance competitions like the CFA Research Challenge"
-    },
-    {
-      id: "5",
-      question: "What are the benefits?",
-      answer: "Members enjoy exclusive access to workshops, competitions, and networking events. These experiences not only boost your resume but also provide real-world insights into the finance industry. Additionally, you will join a vibrant community of like-minded individuals."
-    }
-  ];
+const FAQSection: React.FC = () => {
+  const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section className="w-full bg-primary-medium py-[40px] sm:py-[50px] md:py-[60px]">
-      <div className="w-full max-w-[1440px] mx-auto">
-        <div className="flex flex-col lg:flex-row justify-start items-center gap-[40px] lg:gap-[80px] w-full max-w-[1198px] mx-auto px-4 sm:px-6 lg:px-8 py-[16px] sm:py-[20px] md:py-[24px]">
-          {/* Left Section - Title */}
-          <div className="flex flex-col justify-start items-start gap-[4px] sm:gap-[6px] w-full lg:w-[600px]">
-            <h2 className="font-medium text-center lg:text-left text-text-primary">
-              FAQs
-            </h2>
-            <p className="text-base font-normal leading-normal text-center lg:text-left text-text-primary font-[Inter]">
-              Here are answers to the common questions asked.
-            </p>
-          </div>
-
-          {/* Right Section - FAQ Items */}
-          <div className="flex flex-col justify-start items-center w-full lg:w-auto lg:self-center gap-[20px] sm:gap-[24px] md:gap-[28px]">
-            {faqItems.map((item) => (
-              <div 
-                key={item.id}
-                className="flex flex-col justify-start items-start gap-[10px] sm:gap-[12px] md:gap-[14px] w-full"
-              >
-                <h3 className="text-base font-semibold leading-normal text-left text-text-primary font-[Inter]">
-                  {item.question}
-                </h3>
-                <p className="text-base font-normal leading-tight text-left text-text-primary font-[Inter] w-full">
-                  {item.answer}
-                </p>
-              </div>
-            ))}
-          </div>
+    <section id="faq" className="section section--sage">
+      <div className="shell faq-layout">
+        <div className="faq-intro">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Questions, answered"
+              title="FAQs"
+              description="Here are answers to the common questions asked."
+            />
+          </Reveal>
+          <Reveal delay={0.1}>
+            <a className="faq-contact-card" href="mailto:bureauoffinance@gmail.com">
+              <span className="icon-tile">
+                <Mail size={18} aria-hidden="true" />
+              </span>
+              <span>
+                <strong>Still have questions?</strong>
+                <small>Contact us directly</small>
+              </span>
+              <ChevronDown size={17} className="faq-contact-card__arrow" aria-hidden="true" />
+            </a>
+          </Reveal>
+        </div>
+        <div className="faq-list">
+          {questions.map((item, index) => {
+            const isOpen = openIndex === index;
+            return (
+              <Reveal key={item.question} delay={index * 0.05}>
+                <div className={'faq-item ' + (isOpen ? 'is-open' : '')}>
+                  <button
+                    type="button"
+                    className="faq-question"
+                    aria-expanded={isOpen}
+                    aria-controls={'faq-answer-' + index}
+                    onClick={() => setOpenIndex(isOpen ? -1 : index)}
+                  >
+                    <span>
+                      <small>0{index + 1}</small>
+                      {item.question}
+                    </span>
+                    <Plus size={19} aria-hidden="true" className="faq-plus" />
+                  </button>
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        id={'faq-answer-' + index}
+                        className="faq-answer"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                      >
+                        <p>{item.answer}</p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </div>
     </section>

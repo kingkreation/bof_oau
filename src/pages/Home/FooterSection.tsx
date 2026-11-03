@@ -1,66 +1,84 @@
 import React from 'react';
+import { ArrowUp, Instagram, Linkedin, Mail, Music2 } from 'lucide-react';
 
-const FooterSection = () => {
+const FooterSection: React.FC = () => {
   return (
-    <footer className="w-full bg-background-main py-[40px] sm:py-[60px] md:py-[80px]">
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col justify-start items-center gap-[16px] sm:gap-[20px] w-full max-w-[634px] mx-auto">
-          {/* Logo and Navigation */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-[20px] sm:gap-[30px] w-full px-[6px] sm:px-[8px] md:px-[12px]">
-            {/* Logo */}
-            <img 
-              src="/images/img_d64c46b0a850558.png" 
-              alt="BOF OAU Logo" 
-              className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px]"
-            />
-
-            {/* Navigation Links */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-[12px] sm:gap-[16px] md:gap-[20px]">
-              <a 
-                href="/about" 
-                className="text-body-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+    <footer className="site-footer">
+      <div className="shell">
+        <div className="footer-grid">
+          <div className="footer-brand">
+            <a className="brand-lockup brand-lockup--footer" href="#hero">
+              <img
+                src="/images/img_d64c46b0a850558.png"
+                alt="BOF OAU logo"
+                width="50"
+                height="50"
+              />
+              <span>
+                <strong>BOF OAU</strong>
+                <small>The Students&apos; Professional Bureau of Finance</small>
+              </span>
+            </a>
+            <p>Building the next generation of financial professionals from OAU to Africa.</p>
+            <div className="footer-socials">
+              <a
+                href="https://open.spotify.com/show/5YHUK9vFxslbFGtnfzql8I"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="BOF OAU on Spotify"
               >
-                About Us
+                <Music2 size={17} />
               </a>
-              <a 
-                href="/mission" 
-                className="text-body-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
-              >
-                Mission
+              <a href="mailto:bureauoffinance@gmail.com" aria-label="Email BOF OAU">
+                <Mail size={17} />
               </a>
-              <a 
-                href="/structure" 
-                className="text-body-lg font-semibold leading-relaxed text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
+              <a
+                href="https://www.linkedin.com/company/the-students-professional-bureau-of-finance-oau-ife/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="BOF OAU on LinkedIn"
               >
-                Our Structure
+                <Linkedin size={17} />
+              </a>
+              <a
+                href="https://www.instagram.com/bof_oau"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="BOF OAU on Instagram"
+              >
+                <Instagram size={17} />
               </a>
             </div>
           </div>
-
-          {/* Footer Links */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-[8px] sm:gap-[12px] md:gap-[16px] w-full">
-            <p className="text-subtitle text-center text-text-primary font-[Inter]">
-              © 2025 BOF OAU. All rights reserved.
-            </p>
-            <a 
-              href="#privacy" 
-              className="text-subtitle text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
-            >
-              Privacy Policy
-            </a>
-            <a 
-              href="#terms" 
-              className="text-subtitle text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
-            >
-              Terms of Use
-            </a>
-            <a 
-              href="#cookies" 
-              className="text-subtitle text-center text-text-primary font-[Inter] hover:text-primary-background transition-colors duration-200"
-            >
-              Cookie Policy
-            </a>
+          <div className="footer-column">
+            <h3>Quick links</h3>
+            <a href="#about">About us</a>
+            <a href="#mission">Our Mission</a>
+            <a href="#team">Our Structure</a>
+            <a href="#join">Join Us</a>
           </div>
+          <div className="footer-column">
+            <h3>Contact</h3>
+            <a href="mailto:bureauoffinance@gmail.com">bureauoffinance@gmail.com</a>
+            <span>
+              Obafemi Awolowo University
+              <br />
+              Ile-Ife, Nigeria
+            </span>
+          </div>
+          <div className="footer-column">
+            <h3>Legal</h3>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Use</a>
+            <a href="#cookies">Cookie Policy</a>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <span>© 2025 BOF OAU. All rights reserved.</span>
+          <span>Made for curious minds.</span>
+          <a className="back-to-top" href="#hero" aria-label="Back to top">
+            <ArrowUp size={16} />
+          </a>
         </div>
       </div>
     </footer>
