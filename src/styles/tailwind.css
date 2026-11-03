@@ -1802,6 +1802,139 @@
 .sponsors-section {
   background: #eaf3ed;
 }
+
+.visits-section {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-dark);
+  color: var(--white);
+}
+.visits-section__grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.75;
+  background-image:
+    linear-gradient(rgba(183, 230, 202, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(183, 230, 202, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 88%);
+}
+.visits-section__intro {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 0.55fr);
+  align-items: end;
+  gap: 64px;
+}
+.visits-section .section-heading h2 {
+  color: var(--white);
+}
+.visits-section .section-heading p {
+  color: rgba(255, 255, 255, 0.64);
+}
+.visits-section__signal {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 3px;
+  padding: 23px;
+  border: 1px solid rgba(183, 230, 202, 0.2);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.visits-section__signal > span {
+  color: var(--brand-accent);
+  font-size: 0.68rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.visits-section__signal strong {
+  max-width: 290px;
+  color: var(--white);
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+.visits-section__signal p {
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+.visits-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 55px;
+}
+.visit-card-wrap {
+  min-width: 0;
+  min-height: 230px;
+}
+.visit-card-wrap--featured {
+  grid-column: span 2;
+}
+.visit-card {
+  position: relative;
+  height: 100%;
+  min-height: 230px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 22px;
+  background: #12382a;
+  isolation: isolate;
+}
+.visit-card--featured {
+  min-height: 330px;
+}
+.visit-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms var(--ease);
+}
+.visit-card__shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(5, 40, 26, 0.02) 20%, rgba(5, 20, 13, 0.86) 100%);
+}
+.visit-card__body {
+  position: absolute;
+  right: 20px;
+  bottom: 19px;
+  left: 20px;
+  z-index: 2;
+  display: grid;
+  gap: 7px;
+}
+.visit-card__tag {
+  color: var(--brand-accent);
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.visit-card__body strong {
+  color: var(--white);
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-size: 1.18rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+.visit-card__body p {
+  max-width: 360px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.visit-card:hover img {
+  transform: scale(1.045);
+}
 .sponsors-section__intro {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.55fr);
@@ -2314,6 +2447,19 @@
   .sponsors-section__note {
     max-width: 520px;
   }
+  .visits-section__intro {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .visits-section__signal {
+    max-width: 520px;
+  }
+  .visits-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .visit-card-wrap--featured {
+    grid-column: span 2;
+  }
   .footer-grid {
     grid-template-columns: 1.5fr 1fr 1fr;
   }
@@ -2550,6 +2696,18 @@
   }
   .sponsor-card__label {
     font-size: 0.56rem;
+  }
+  .visits-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 38px;
+  }
+  .visit-card-wrap,
+  .visit-card-wrap--featured,
+  .visit-card,
+  .visit-card--featured {
+    grid-column: auto;
+    min-height: 280px;
   }
   .event-card {
     height: 370px;
