@@ -1,5 +1,6 @@
 import React, { FormEvent, useState } from 'react';
-import { Check, Copy, Mail, MapPin, Music2, Send } from 'lucide-react';
+import { Check, Copy, Mail, MapPin, Send } from 'lucide-react';
+import { SiSpotify } from 'react-icons/si';
 import Reveal from '../../components/home/Reveal';
 import SectionHeading from '../../components/home/SectionHeading';
 
@@ -99,7 +100,7 @@ const ContactSection: React.FC = () => {
               rel="noreferrer"
             >
               <span className="spotify-card__mark">
-                <Music2 size={24} aria-hidden="true" />
+                <SiSpotify size={45} aria-hidden="true" />
               </span>
               <span>
                 <small>Listen on Spotify</small>
