@@ -2198,12 +2198,11 @@
 }
 .spotify-card__mark {
   display: grid;
+  flex: 0 0 auto;
   place-items: center;
   width: 45px;
   height: 45px;
-  border-radius: 50%;
-  background: #8de6ad;
-  color: var(--brand-secondary);
+  color: #8de6ad;
 }
 .spotify-card > span:nth-child(2) {
   display: grid;
@@ -2262,6 +2261,7 @@
 }
 .footer-socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: 24px;
 }

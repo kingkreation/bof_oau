@@ -1,5 +1,6 @@
 import React from 'react';
-import { ArrowUp, Instagram, Linkedin, Mail, Music2 } from 'lucide-react';
+import { ArrowUp, Facebook, Instagram, Linkedin, Mail, Music2 } from 'lucide-react';
+import { SiSubstack } from 'react-icons/si';
 
 const FooterSection: React.FC = () => {
   return (
@@ -47,6 +48,22 @@ const FooterSection: React.FC = () => {
                 aria-label="BOF OAU on Instagram"
               >
                 <Instagram size={17} />
+              </a>
+              <a
+                href="https://www.facebook.com/bof.finance.3"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="BOF OAU on Facebook"
+              >
+                <Facebook size={17} />
+              </a>
+              <a
+                href="https://substack.com/@bofoau?utm_source=share&utm_medium=android&r=6di7l5"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="BOF OAU on Substack"
+              >
+                <SiSubstack size={14} />
               </a>
             </div>
           </div>
