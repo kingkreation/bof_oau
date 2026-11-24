@@ -1432,7 +1432,6 @@
   aspect-ratio: 4/5;
   object-fit: cover;
   border-radius: 22px 22px 68px 22px;
-  filter: grayscale(0.2);
 }
 .team-featured__tag {
   position: absolute;
@@ -1485,13 +1484,9 @@
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  filter: grayscale(0.9);
-  transition:
-    filter 400ms ease,
-    transform 500ms var(--ease);
+  transition: transform 500ms var(--ease);
 }
 .team-card:hover .team-card__image img {
-  filter: grayscale(0);
   transform: scale(1.035);
 }
 .team-card__linkedin {
