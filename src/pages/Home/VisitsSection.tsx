@@ -4,7 +4,7 @@ import SectionHeading from '../../components/home/SectionHeading';
 
 const visits = [
   {
-    name: 'Chevron',
+    name: 'McKinsey & Company',
     title: 'Inside the boardroom',
     detail: 'A close look at how ideas, people, and decisions come together.',
     image: '/images/visits/WhatsApp Image 2026-10-20 at 1.14.10 PM.jpeg',
@@ -23,19 +23,19 @@ const visits = [
     image: '/images/visits/WhatsApp Image 2026-10-20 at 1.10.30 PM.jpeg',
   },
   {
-    name: 'McKinsey & Company',
+    name: 'Abbey Bank Plc',
     title: 'Seeing strategy up close',
     detail: 'Connecting classroom frameworks to real-world problem solving.',
     image: '/images/visits/WhatsApp Image 2026-10-20 at 1.09.36 PM.jpeg',
   },
   {
-    name: 'Abbey Bank Plc',
+    name: 'BetaPlus Group',
     title: 'Meeting industry practitioners',
     detail: 'Making space for candid conversations about careers in finance.',
     image: '/images/visits/WhatsApp Image 2026-10-20 at 1.07.52 PM.jpeg',
   },
   {
-    name: 'Beta Plus Group',
+    name: 'Chevron',
     title: 'Learning from operators',
     detail: 'Seeing how financial thinking shapes everyday business decisions.',
     image: '/images/visits/WhatsApp Image 2026-10-20 at 1.07.18 PM.jpeg',
