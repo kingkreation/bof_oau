@@ -397,8 +397,7 @@
   }
   h1,
   h2,
-  h3,
-  .brand-lockup strong {
+  h3 {
     font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
   h1 {
@@ -703,16 +702,18 @@
   gap: 2px;
 }
 .brand-lockup strong {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
   color: #000000;
-  font-size: 0.94rem;
+  font-size: 1.04rem;
+  font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
 }
 .brand-lockup small {
-  max-width: 215px;
-  color: #111111;
-  font-size: 0.62rem;
-  font-weight: 500;
+  max-width: 230px;
+  color: #000000;
+  font-size: 0.66rem;
+  font-weight: 700;
   line-height: 1.28;
   opacity: 1;
 }
