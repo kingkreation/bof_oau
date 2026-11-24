@@ -8,7 +8,7 @@ const cards = [
   {
     icon: Compass,
     eyebrow: 'Our journey',
-    value: '2011',
+    value: '2008',
     title: 'Founded with intent',
     copy: 'A student-led space built to make finance practical, inclusive, and ambitious.',
   },
@@ -74,7 +74,7 @@ const EvolutionSection: React.FC = () => {
         </div>
         <div className="stat-strip" aria-label="BOF OAU key statistics">
           <div>
-            <strong>2011</strong>
+            <strong>2008</strong>
             <span>founded</span>
           </div>
           <div>

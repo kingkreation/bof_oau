@@ -8,7 +8,7 @@ const questions = [
   {
     question: 'What is BOF?',
     answer:
-      "BOF is Nigeria's first student-led finance organisation at OAU, founded in 2011 and focused on practical finance skills, not just theory.",
+      "BOF is Nigeria's first student-led finance organisation at OAU, founded in 2008 and focused on practical finance skills, not just theory.",
   },
   {
     question: 'How to become a member?',

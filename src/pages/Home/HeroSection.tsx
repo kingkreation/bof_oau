@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
         <div className="hero-copy">
           <Reveal>
             <span className="eyebrow eyebrow--dark">
-              Nigeria&apos;s first student-led finance organization · Since 2011
+              Nigeria&apos;s first student-led finance organization · Since 2008
             </span>
           </Reveal>
           <Reveal delay={0.05}>
