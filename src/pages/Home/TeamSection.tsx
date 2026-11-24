@@ -132,17 +132,17 @@ const TeamSection: React.FC = () => {
           <Reveal className="team-featured__portrait">
             <img
               src="/images/img_ellipse_1.jpg"
-              alt="Esther Mac-Sanddy, CEO of BOF OAU"
+              alt="Esther Mac-Sanddy, President & CEO of BOF OAU"
               width="520"
               height="650"
               loading="lazy"
             />
-            <span className="team-featured__tag">CEO · 2024/25</span>
+            <span className="team-featured__tag">President &amp; CEO · 2024/25</span>
           </Reveal>
           <Reveal className="team-featured__copy" delay={0.08}>
             <span className="card-eyebrow">Featured leader</span>
             <h3>Esther Mac-Sanddy</h3>
-            <p className="team-featured__role">Chief Executive Officer</p>
+            <p className="team-featured__role">President &amp; CEO</p>
             <p>
               Leading with the conviction that the strongest finance professionals are also
               excellent listeners, collaborators, and citizens.
