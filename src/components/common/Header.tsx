@@ -75,10 +75,10 @@ const Header: React.FC = () => {
     <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
       <div className="shell site-header__inner">
         <a className="brand-lockup" href={homeHref} onClick={closeMenu} aria-label="BOF OAU home">
-          <img src="/images/img_d64c46b0a850558.png" alt="BOF OAU logo" width="48" height="48" />
+          <img src="/images/bof.png" alt="BOF OAU logo" width="44" height="50" />
           <span>
             <strong>BOF OAU</strong>
-            <small>Students' Professional Bureau of Finance</small>
+            <small>The Students&apos; Professional Bureau of Finance, OAU</small>
           </span>
         </a>
 

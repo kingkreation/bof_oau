@@ -10,14 +10,14 @@ const FooterSection: React.FC = () => {
           <div className="footer-brand">
             <a className="brand-lockup brand-lockup--footer" href="#hero">
               <img
-                src="/images/img_d64c46b0a850558.png"
+                src="/images/bof.png"
                 alt="BOF OAU logo"
-                width="50"
+                width="44"
                 height="50"
               />
               <span>
                 <strong>BOF OAU</strong>
-                <small>The Students&apos; Professional Bureau of Finance</small>
+                <small>The Students&apos; Professional Bureau of Finance, OAU</small>
               </span>
             </a>
             <p>Building the next generation of financial professionals from OAU to Africa.</p>
