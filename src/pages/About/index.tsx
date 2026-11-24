@@ -18,13 +18,13 @@ const About: React.FC = () => {
     <>
       <Helmet>
         <title>About BOF OAU — The story behind the bureau</title>
-        <meta name="description" content="Discover the story, programs, and community behind BOF OAU, Nigeria's first student-led finance club." />
+        <meta name="description" content="Discover the story, programs, and community behind BOF OAU, Nigeria's first student-led finance organization." />
       </Helmet>
       <Header />
       <main id="main-content">
         <section className="inner-page-hero">
           <div className="shell inner-page-hero__layout">
-            <Reveal><span className="eyebrow eyebrow--dark">About the bureau</span><h1>A serious start for a meaningful career.</h1><p>BOF OAU is Nigeria&apos;s first student-led finance club, built by students who wanted more from the classroom and more from themselves.</p></Reveal>
+            <Reveal><span className="eyebrow eyebrow--dark">About the bureau</span><h1>A serious start for a meaningful career.</h1><p>BOF OAU is Nigeria&apos;s first student-led finance organization, built by students who wanted more from the classroom and more from themselves.</p></Reveal>
             <Reveal className="inner-page-hero__visual" delay={0.1}><img src="/images/img_rectangle_7.png" alt="BOF OAU students and faculty advisers" width="850" height="600" /><span>Est. 2011 · Ile-Ife</span></Reveal>
           </div>
         </section>

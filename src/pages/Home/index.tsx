@@ -23,12 +23,12 @@ const Home: React.FC = () => {
         <title>BOF OAU — Empowering Future Financial Leaders</title>
         <meta
           name="description"
-          content="BOF OAU is Nigeria's first student-led finance club. Build practical skills, find your people, and become the next generation of financial leaders."
+          content="BOF OAU is Nigeria's first student-led finance organization. Build practical skills, find your people, and become the next generation of financial leaders."
         />
         <meta property="og:title" content="BOF OAU — Empowering Future Financial Leaders" />
         <meta
           property="og:description"
-          content="Nigeria's first student-led finance club at Obafemi Awolowo University."
+          content="Nigeria's first student-led finance organization at Obafemi Awolowo University."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://bofoau.org" />

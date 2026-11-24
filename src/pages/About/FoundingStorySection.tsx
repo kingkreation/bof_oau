@@ -43,7 +43,7 @@ const FoundingStorySection = () => {
                   </p>
                   <br />
                   <p className="text-body text-left">
-                    Recognizing this imperative, the Department of Management and Accounting took a visionary step in 2011. They conceived and established The Students' Professional Bureau of Finance (BOF), not merely as a club, but as a groundbreaking experiment in experiential learning. It was christened Nigeria's first student-led finance bureau, a deliberate distinction from a typical club, signaling its mission to operate with the professionalism, rigor, and strategic focus of a real-world financial institution.
+                    Recognizing this imperative, the Department of Management and Accounting took a visionary step in 2011. They conceived and established The Students' Professional Bureau of Finance (BOF), not merely as an organization, but as a groundbreaking experiment in experiential learning. It was christened Nigeria's first student-led finance bureau, a deliberate distinction from a typical organization, signaling its mission to operate with the professionalism, rigor, and strategic focus of a real-world financial institution.
                   </p>
                   <br />
                   <p className="text-body text-left">
