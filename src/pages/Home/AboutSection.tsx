@@ -22,7 +22,7 @@ const AboutSection: React.FC = () => {
           <SectionHeading
             eyebrow="About BOF OAU"
             title="Leading Student Finance Organization in Africa"
-            description="BOF OAU is Nigeria's first student-led finance club, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape."
+            description="BOF OAU is Nigeria's first student-led finance organization, uniting passionate students from all faculties. Our mission is to equip future financial leaders with the skills and experience needed to excel in today's competitive landscape."
           />
           <div className="feature-grid">
             <article className="feature-card">

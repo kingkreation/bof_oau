@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
         <div className="hero-copy">
           <Reveal>
             <span className="eyebrow eyebrow--dark">
-              Nigeria&apos;s first student-led finance club · Since 2011
+              Nigeria&apos;s first student-led finance organization · Since 2008
             </span>
           </Reveal>
           <Reveal delay={0.05}>
@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="hero-lede">
-              Join BOF OAU, Nigeria&apos;s premier student finance club, where passion meets
+              Join BOF OAU, Nigeria&apos;s premier student finance organization, where passion meets
               opportunity. Together, we cultivate the next generation of financial professionals
               through innovative training and real-world experiences.
             </p>

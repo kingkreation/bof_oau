@@ -43,11 +43,11 @@ const FoundingStorySection = () => {
                   </p>
                   <br />
                   <p className="text-body text-left">
-                    Recognizing this imperative, the Department of Management and Accounting took a visionary step in 2011. They conceived and established The Students' Professional Bureau of Finance (BOF), not merely as a club, but as a groundbreaking experiment in experiential learning. It was christened Nigeria's first student-led finance bureau, a deliberate distinction from a typical club, signaling its mission to operate with the professionalism, rigor, and strategic focus of a real-world financial institution.
+                    Recognizing this imperative, the Department of Management and Accounting took a visionary step in 2008. They conceived and established The Students' Professional Bureau of Finance (BOF), not merely as an organization, but as a groundbreaking experiment in experiential learning. It was christened Nigeria's first student-led finance bureau, a deliberate distinction from a typical organization, signaling its mission to operate with the professionalism, rigor, and strategic focus of a real-world financial institution.
                   </p>
                   <br />
                   <p className="text-body text-left">
-                    From a bold idea in 2011, BOF OAU has evolved into a premier finance ecosystem. Its journey from a pioneering initiative to a multi-divisional bureau with a proven track record of producing world-class talent is a testament to the foresight of its founders and the relentless drive of every student who has passed through its ranks. Today, BOF OAU stands as the realization of that initial vision: a vibrant, professional launchpad empowering the next generation of Africa's financial leaders.
+                    From a bold idea in 2008, BOF OAU has evolved into a premier finance ecosystem. Its journey from a pioneering initiative to a multi-divisional bureau with a proven track record of producing world-class talent is a testament to the foresight of its founders and the relentless drive of every student who has passed through its ranks. Today, BOF OAU stands as the realization of that initial vision: a vibrant, professional launchpad empowering the next generation of Africa's financial leaders.
                   </p>
                 </div>
               </div>
